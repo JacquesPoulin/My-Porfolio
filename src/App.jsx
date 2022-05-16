@@ -15,6 +15,7 @@ function App() {
     <div className="App">
       <HashRouter>
         <NavBar />
+
         <Routes>
           <Route path="*" element={<Landing />} />
           <Route path="/" element={<Landing />} />
@@ -24,10 +25,7 @@ function App() {
           <Route path="/myprojects" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <img
-          src="../public/assets/images/svg/node-svgrepo-com.svg"
-          alt="Logo NodeJS"
-        />
+
         <Footer />
       </HashRouter>
     </div>
