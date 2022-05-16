@@ -1,9 +1,11 @@
 import React from "react";
+import GoToTop from "../components/GoToTop";
 
 const Project = () => {
   return (
-    <div>
-      <h1>Projects</h1>
+    <div className="min-h-screen bg-no-repeat bg-center bg-sand">
+      <h1>projects</h1>
+      <GoToTop />
     </div>
   );
 };
