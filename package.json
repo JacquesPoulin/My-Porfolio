@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@tailwindui/react": "^0.1.1",
     "autoprefixer": "^10.4.4",
     "axios": "^0.27.2",
     "proptypes": "^1.1.0",

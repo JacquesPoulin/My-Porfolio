@@ -3,11 +3,11 @@ module.exports = {
   // ...
   theme: {
     extend: {
+      fontFamily: {
+        main: "'Roboto', sans-serif;",
+      },
       backgroundImage: {
-        carnivor: "url('./assets/carnivor.jpg')",
-        herbivor: "url('./assets/herbivor.jpg.webp')",
-        aquatic:
-          "url('https://www.sciencenewsforstudents.org/wp-content/uploads/2019/11/860-header-non-dinos2.jpg')",
+        sand: "url('./public/assets/images/bg/black-sand-beach.jpg')",
       },
     },
   },
