@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
-      <h2>This is my footer</h2>
+    <div className="absolute min-w-full h-9 botom-0">
+      <h1>FOOTER</h1>
     </div>
   );
 };
