@@ -4,7 +4,7 @@ import GoToTop from "../components/GoToTop";
 const About = () => {
   return (
     <div className="min-h-screen bg-no-repeat bg-center bg-sand">
-      <h1></h1>
+      <h1>about</h1>
       <GoToTop />
     </div>
   );
