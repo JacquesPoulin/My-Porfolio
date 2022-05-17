@@ -1,24 +1,27 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import navLinksFr from "../../data/navLinksFr";
+
+// ----- components -----
 import Logo from "./Logo";
 
 const NavBar = () => {
+  // ----- STATES -----
   const [isOpened, setIsOpened] = useState(false);
 
   return (
     <header className="absolute flex min-w-full h-16">
-      {/* ----- LAPTOP ----- */}
+      {/* ----- LAPTOP VERSION ----- */}
       <nav className="flex items-center justify-between h-16 min-w-full pt-10 flex-nowrap">
         <NavLink to="/">
           {/* ----- WEBSITE LOGO ----- */}
           <img
-            src="../../public/assets/images/LOGO.png"
+            src="/assets/images/LOGO.png"
             alt="logo du site"
             className="w-80 h-w-80 cursor-pointer -ml-10 bp3: bp4:w-52 bp4:h-40 "
           />
         </NavLink>
-        {/* ----- NAVBAR ----- */}
+        {/* ----- navbar list ----- */}
         <ul className="flex flex-nowrap bp1:hidden">
           {navLinksFr.map((link) => (
             <NavLink key={link.id} to={link.path}>
@@ -28,7 +31,7 @@ const NavBar = () => {
             </NavLink>
           ))}
         </ul>
-        {/* ----- BURGER BUTTON ----- */}
+        {/* ----- BURGER BUTTON LOGIC ----- */}
         {!isOpened ? (
           <button
             type="button"
@@ -56,7 +59,7 @@ const NavBar = () => {
         )}
       </nav>
 
-      {/* ----- MOBILE ----- */}
+      {/* ----- MOBILE VERSION : menu ----- */}
       {isOpened && (
         <div className="absolute right-0 w-full h-96 p-7 top-24 backdrop-filter backdrop-blur-lg">
           <ul className="items-center justify-center text-3xl text-center text-slate-50 font-secondary">

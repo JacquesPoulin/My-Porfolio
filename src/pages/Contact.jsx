@@ -1,11 +1,9 @@
 import React from "react";
-import GoToTop from "../components/GoToTop";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-no-repeat bg-center bg-sand">
+    <div>
       <h1>contact</h1>
-      <GoToTop />
     </div>
   );
 };
