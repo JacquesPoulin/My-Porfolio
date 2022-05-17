@@ -38,7 +38,7 @@ const NavBar = () => {
         </ul>
         {/* ----- BURGER BUTTON LOGIC ----- */}
         {!isOpened ? (
-          <div className="w-28 flex flex-row justify-between mr-4 bp3:w-24">
+          <div className="hidden w-28 justify-between mr-4 bp1:flex bp3:w-24">
             <div>
               <button
                 type="button"
@@ -61,7 +61,7 @@ const NavBar = () => {
             </div>
           </div>
         ) : (
-          <div className="w-28 flex flex-row justify-between mr-4 bp3:w-24">
+          <div className="hidden w-28 justify-between mr-4 bp1:flex bp3:w-24">
             <div>
               <button
                 type="button"
