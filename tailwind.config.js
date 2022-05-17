@@ -8,7 +8,7 @@ module.exports = {
         secondary: "'Comfortaa', cursive",
       },
       backgroundImage: {
-        sand: "url('./public/assets/images/bg/black-sand-beach.jpg')",
+        sand: "url('/assets/images/bg/black-sand-beach.jpg')",
       },
       screens: {
         bp1: { max: "800px" },
