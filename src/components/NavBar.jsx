@@ -76,7 +76,7 @@ const NavBar = () => {
 
       {/* ----- MOBILE VERSION : menu ----- */}
       {isOpened && (
-        <div className="absolute right-0 w-full h-96 p-7 top-24 backdrop-filter backdrop-blur-lg">
+        <div className="absolute right-0 w-full h-screen p-7 top-24 backdrop-filter backdrop-blur-lg">
           <ul className="items-center justify-center text-3xl text-center text-slate-50 font-secondary">
             {navLinksFr.map((link) => (
               <NavLink
@@ -84,7 +84,7 @@ const NavBar = () => {
                 to={link.path}
                 onClick={() => setIsOpened(false)}
               >
-                <li className="flex justify-between text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-200 ease-out hover:text-amber-600 active:text-amber-600 border-b-2 py-4 bp3sub:py-2 bp3sub:text-sm">
+                <li className="flex justify-between text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-200 ease-out hover:text-amber-600 active:text-amber-600 border-b-2 py-4 bp3sub:py-6 bp3sub:text-lg">
                   {link.title}
                   <button
                     type="button"
