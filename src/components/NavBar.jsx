@@ -38,39 +38,51 @@ const NavBar = () => {
         </ul>
         {/* ----- BURGER BUTTON LOGIC ----- */}
         {!isOpened ? (
-          <button
-            type="button"
-            className=" hidden w-24 justify-around transition-all active:outline-none focus:outline-none bp1:flex bp1:mr-2"
-            onClick={() => setIsOpened(!isOpened)}
-          >
-            <Logo
-              myStyle="w-8 h-8 text-amber-400 hover:text-amber-600"
-              name="logos-menu-burger"
-              id="logos-menu-burger"
-            />
-            <img
-              src="/assets/images/svg/uk-flag.svg"
-              alt="drapeau anglais"
-              className="w-7 h-7 cursor-pointer"
-            />
-          </button>
+          <div className="hidden w-28 justify-between mr-4 bp1:flex bp3:w-24">
+            <div>
+              <button
+                type="button"
+                className=" hidden transition-all active:outline-none focus:outline-none bp1:flex bp1:mr-2"
+                onClick={() => setIsOpened(!isOpened)}
+              >
+                <Logo
+                  myStyle="w-8 h-8 text-amber-400 hover:text-amber-600"
+                  name="logos-menu-burger"
+                  id="logos-menu-burger"
+                />
+              </button>
+            </div>
+            <div>
+              <img
+                src="/assets/images/svg/uk-flag.svg"
+                alt="drapeau anglais"
+                className="w-7 h-7 cursor-pointer"
+              />
+            </div>
+          </div>
         ) : (
-          <button
-            type="button"
-            className=" hidden w-24 justify-around transition-all active:outline-none focus:outline-none bp1:flex bp1:mr-2"
-            onClick={() => setIsOpened(!isOpened)}
-          >
-            <Logo
-              myStyle="w-8 h-8 text-amber-400 hover:text-amber-600"
-              name="cross-menu-burger"
-              id="cross-menu-burger"
-            />
-            <img
-              src="/assets/images/svg/uk-flag.svg"
-              alt="drapeau anglais"
-              className="w-7 h-7 cursor-pointer"
-            />
-          </button>
+          <div className="hidden w-28 justify-between mr-4 bp1:flex bp3:w-24">
+            <div>
+              <button
+                type="button"
+                className=" hidden justify-around transition-all active:outline-none focus:outline-none bp1:flex bp1:mr-2"
+                onClick={() => setIsOpened(!isOpened)}
+              >
+                <Logo
+                  myStyle="w-8 h-8 text-amber-400 hover:text-amber-600"
+                  name="cross-menu-burger"
+                  id="cross-menu-burger"
+                />
+              </button>
+            </div>
+            <div>
+              <img
+                src="/assets/images/svg/uk-flag.svg"
+                alt="drapeau anglais"
+                className="w-7 h-7 cursor-pointer"
+              />
+            </div>
+          </div>
         )}
       </nav>
 
