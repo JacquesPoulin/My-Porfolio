@@ -1,120 +1,97 @@
+/* eslint-disable jsx-a11y/interactive-supports-focus */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+// ! ⬆️⬆️⬆️ The <div> element has a child <FaBars> icon element that allows keyboard interaction
+
+// ----- REACT -----
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import navLinksFr from "../../data/navLinksFr";
 
-// ----- components -----
-import Logo from "./Logo";
+// ----- All React Icons : fa, hi, bs ... -----
+import { FaBars, FaTimes } from "react-icons/fa";
+
+// ----- datas -----
+import navLinksFr from "../../data/navLinksFr";
+import Social from "./Social";
 
 const NavBar = () => {
   // ----- STATES -----
   const [isOpened, setIsOpened] = useState(false);
 
+  // ----- FUNCTIONS -----
+  const toggleNavBar = () => setIsOpened(!isOpened);
+  const closeMenu = () => {
+    setIsOpened(false);
+  };
+
   return (
-    <header className="flex min-w-full h-16">
-      {/* ----- LAPTOP VERSION ----- */}
-      <nav className="flex items-center justify-between h-16 min-w-full pt-10 flex-nowrap">
+    <nav className="fixed w-full h-20 flex justify-between items-center px-4 min-w-full">
+      {/* >> Logo */}
+      <div>
         <NavLink to="/">
-          {/* ----- WEBSITE LOGO ----- */}
           <img
             src="/assets/images/LOGO.png"
+            style={{ width: "20rem" }}
             alt="logo du site"
-            className="w-80 h-w-80 cursor-pointer -ml-10 bp3: bp4:w-56 bp4:h-48 "
+            className="cursor-pointer bp4:w-56 bp4:h-48 -m-10"
           />
         </NavLink>
-        {/* ----- navbar list ----- */}
-        <ul className="flex flex-nowrap bp1:hidden">
-          {navLinksFr.map((link) => (
-            <NavLink key={link.id} to={link.path}>
-              <li className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50">
-                {link.title}
-              </li>
-            </NavLink>
-          ))}
-          <img
-            src="/assets/images/svg/uk-flag.svg"
-            alt="drapeau anglais"
-            className="w-7 h-7 mr-6 cursor-pointer transition-all duration-500 ease-in-out hover:scale-125"
-          />
-        </ul>
-        {/* ----- BURGER BUTTON LOGIC ----- */}
-        {!isOpened ? (
-          <div className="hidden w-28 justify-between mr-4 bp1:flex bp3:w-24">
-            <div>
-              <button
-                type="button"
-                className=" hidden transition-all active:outline-none focus:outline-none bp1:flex bp1:mr-2"
-                onClick={() => setIsOpened(!isOpened)}
-              >
-                <Logo
-                  myStyle="w-8 h-8 text-amber-400 hover:text-amber-600"
-                  name="logos-menu-burger"
-                  id="logos-menu-burger"
-                />
-              </button>
-            </div>
-            <div>
-              <img
-                src="/assets/images/svg/uk-flag.svg"
-                alt="drapeau anglais"
-                className="w-7 h-7 cursor-pointer"
-              />
-            </div>
-          </div>
-        ) : (
-          <div className="hidden w-28 justify-between mr-4 bp1:flex bp3:w-24">
-            <div>
-              <button
-                type="button"
-                className=" hidden justify-around transition-all active:outline-none focus:outline-none bp1:flex bp1:mr-2"
-                onClick={() => setIsOpened(!isOpened)}
-              >
-                <Logo
-                  myStyle="w-8 h-8 text-amber-400 hover:text-amber-600"
-                  name="cross-menu-burger"
-                  id="cross-menu-burger"
-                />
-              </button>
-            </div>
-            <div>
-              <img
-                src="/assets/images/svg/uk-flag.svg"
-                alt="drapeau anglais"
-                className="w-7 h-7 cursor-pointer"
-              />
-            </div>
-          </div>
-        )}
-      </nav>
+      </div>
 
-      {/* ----- MOBILE VERSION : menu ----- */}
-      {isOpened && (
-        <div className="absolute right-0 w-full h-screen p-7 top-24 backdrop-filter backdrop-blur-lg">
-          <ul className="items-center justify-center text-3xl text-center text-slate-50 font-secondary">
-            {navLinksFr.map((link) => (
-              <NavLink
-                key={link.id}
-                to={link.path}
-                onClick={() => setIsOpened(false)}
-              >
-                <li className="flex justify-between text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-200 ease-out hover:text-amber-600 active:text-amber-600 border-b-2 py-4 bp3sub:py-6 bp3sub:text-lg">
-                  {link.title}
-                  <button
-                    type="button"
-                    className="bg-amber-400 hover:bg-amber-600"
-                  >
-                    <Logo
-                      myStyle="w-8 h-8 text-amber-400 hover:text-amber-600 bp3sub:w-6 bp3:h-6"
-                      name="right-arrow"
-                      id="right-arrow"
-                    />
-                  </button>
-                </li>
-              </NavLink>
-            ))}
-          </ul>
-        </div>
-      )}
-    </header>
+      {/* >> Menu */}
+      <ul className="hidden md:flex">
+        {navLinksFr.map((link) => (
+          <NavLink key={link.id} to={link.path}>
+            <li className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50">
+              {link.title}
+            </li>
+          </NavLink>
+        ))}
+      </ul>
+
+      {/* >> Hamburger logic */}
+      <div
+        role="button"
+        onClick={toggleNavBar}
+        className="md:hidden z-10 cursor-pointer"
+      >
+        {!isOpened ? (
+          <button
+            type="button"
+            className="outline-none focus:outline-none active:outline-none"
+          >
+            <FaBars className="w-7 h-7 text-amber-400 transition-all hover:text-amber-600" />
+          </button>
+        ) : (
+          <button
+            type="button"
+            className="outline-none focus:outline-none active:outline-none"
+          >
+            <FaTimes className="w-7 h-7 text-amber-400 hover:text-amber-600 transition-all" />
+          </button>
+        )}
+      </div>
+
+      {/* ----- MOBILE MENU ----- */}
+      <ul
+        className={
+          !isOpened
+            ? "hidden"
+            : "absolute top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center"
+        }
+      >
+        {navLinksFr.map((link) => (
+          <NavLink key={link.id} to={link.path} onClick={closeMenu}>
+            <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl">
+              {link.title}
+            </li>
+          </NavLink>
+        ))}
+      </ul>
+
+      {/* ----- SOCIAL ICONS----- */}
+
+      <Social />
+    </nav>
   );
 };
 
