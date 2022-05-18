@@ -19,3 +19,13 @@
     text-shadow: none;
   }
 }
+
+@layer base {
+  body {
+    @apply font-[Comfortaa];
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+}
