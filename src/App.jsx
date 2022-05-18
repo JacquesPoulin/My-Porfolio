@@ -14,7 +14,7 @@ import "./App.css";
 // ----- rendering -----
 function App() {
   return (
-    <div className="min-h-screen bg-no-repeat bg-center bg-sand">
+    <div className="h-screen bg-no-repeat bg-center bg-slate-900">
       <HashRouter>
         <NavBar />
         <Routes>
