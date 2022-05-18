@@ -32,7 +32,7 @@ const NavBar = () => {
             src="/assets/images/LOGO.png"
             style={{ width: "20rem" }}
             alt="logo du site"
-            className="cursor-pointer bp4:w-56 bp4:h-48 -m-10"
+            className="cursor-pointer bp4:w-52 -m-10 bp4:-m-14"
           />
         </NavLink>
       </div>
