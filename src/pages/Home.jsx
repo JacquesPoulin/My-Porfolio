@@ -1,7 +1,8 @@
 import React from "react";
+import Presentation from "../components/Home/Presentation";
 
 const Home = () => {
-  return <div>{/* test */}</div>;
+  return <Presentation />;
 };
 
 export default Home;

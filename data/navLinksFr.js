@@ -1,17 +1,17 @@
 const navLinksFr = [
   {
     id: 1,
-    path: "/home",
+    path: "/accueil",
     title: "Accueil",
   },
   {
     id: 2,
-    path: "/aboutme",
+    path: "/apropos",
     title: "A propos",
   },
   {
     id: 3,
-    path: "/work",
+    path: "/projets",
     title: "Projets",
   },
   {

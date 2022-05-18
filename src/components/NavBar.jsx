@@ -10,7 +10,7 @@ const NavBar = () => {
   const [isOpened, setIsOpened] = useState(false);
 
   return (
-    <header className="absolute flex min-w-full h-16">
+    <header className="flex min-w-full h-16">
       {/* ----- LAPTOP VERSION ----- */}
       <nav className="flex items-center justify-between h-16 min-w-full pt-10 flex-nowrap">
         <NavLink to="/">
@@ -25,7 +25,7 @@ const NavBar = () => {
         <ul className="flex flex-nowrap bp1:hidden">
           {navLinksFr.map((link) => (
             <NavLink key={link.id} to={link.path}>
-              <li className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-200 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50">
+              <li className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50">
                 {link.title}
               </li>
             </NavLink>
