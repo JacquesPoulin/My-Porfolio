@@ -12,7 +12,7 @@ const skills = [
 
   {
     id: 4,
-    img: "../public/assets/images/svg/html-5-svgrepo-com.svg",
+    img: "/assets/images/svg/html-5-svgrepo-com.svg",
     alt: "logo HTML5",
     label: "HTML5",
     use: "Front",
@@ -22,7 +22,7 @@ const skills = [
   },
   {
     id: 5,
-    img: "../public/assets/images/svg/css-3-logo-svgrepo-com.svg",
+    img: "/assets/images/svg/css-3-logo-svgrepo-com.svg",
     alt: "logo CSS3",
     label: "CSS3",
     use: "Front",
@@ -32,7 +32,7 @@ const skills = [
   },
   {
     id: 6,
-    img: "../public/assets/images/svg/javascript-logo-svgrepo-com.svg",
+    img: "/assets/images/svg/javascript-logo-svgrepo-com.svg",
     alt: "logo Javascript",
     label: "Javascript",
     use: "Front",
@@ -42,7 +42,7 @@ const skills = [
   },
   {
     id: 7,
-    img: "../public/assets/images/svg/typescript-icon-svgrepo-com.svg",
+    img: "/assets/images/svg/typescript-icon-svgrepo-com.svg",
     alt: "logo Typescript",
     label: "Typescript",
     use: "Front",
@@ -52,7 +52,7 @@ const skills = [
   },
   {
     id: 8,
-    img: "../public/assets/images/svg/react-svgrepo-com.svg",
+    img: "/assets/images/svg/react-svgrepo-com.svg",
     alt: "logo React",
     label: "React",
     use: "Front",
@@ -62,7 +62,7 @@ const skills = [
   },
   {
     id: 9,
-    img: "../public/assets/images/svg/sass-svgrepo-com.svg",
+    img: "/assets/images/svg/sass-svgrepo-com.svg",
     alt: "logo Sass",
     label: "Sass",
     use: "Front",
@@ -72,7 +72,7 @@ const skills = [
   },
   {
     id: 10,
-    img: "../public/assets/images/svg/tailwindcss-icon-svgrepo-com.svg",
+    img: "/assets/images/svg/tailwindcss-icon-svgrepo-com.svg",
     alt: "logo Tailwind",
     label: "Tailwind",
     use: "Front",
@@ -82,7 +82,7 @@ const skills = [
   },
   {
     id: 12,
-    img: "../public/assets/images/svg/figma-svgrepo-com.svg",
+    img: "/assets/images/svg/figma-svgrepo-com.svg",
     alt: "logo Figma",
     label: "Figma",
     use: "Design",
@@ -92,7 +92,7 @@ const skills = [
   },
   {
     id: 13,
-    img: "../public/assets/images/svg/nodejs-1-logo-svgrepo-com.svg",
+    img: "/assets/images/svg/nodejs-1-logo-svgrepo-com.svg",
     alt: "logo NodeJS",
     label: "NodeJS",
     use: "Back",
@@ -102,7 +102,7 @@ const skills = [
   },
   {
     id: 14,
-    img: "../public/assets/images/svg/mysql-logo-svgrepo-com.svg",
+    img: "/assets/images/svg/mysql-logo-svgrepo-com.svg",
     alt: "logo MySQL",
     label: "MySQL",
     use: "Back",
@@ -112,7 +112,7 @@ const skills = [
   },
   {
     id: 16,
-    img: "../public/assets/images/svg/postman-icon-svgrepo-com.svg",
+    img: "/assets/images/svg/postman-icon-svgrepo-com.svg",
     alt: "logo Postman",
     label: "Postman",
     use: "Tool back",
