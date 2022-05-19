@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 
 // ----- All React Icons : fa, hi, bs ... -----
@@ -12,7 +13,7 @@ const Social = () => {
         {/* ----- LINKEDIN ----- */}
         <li className="w-36 h-16 pr-2 flex rounded-r-xl justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-blue-600 z-30">
           <a
-            href="/"
+            href="#"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-lg font-semibold"
           >
             LinkedIn <FaLinkedin size={30} />
@@ -22,7 +23,7 @@ const Social = () => {
         {/* ----- GITHUB ----- */}
         <li className="w-36 h-16 pr-2 flex rounded-r-xl justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-gray-600">
           <a
-            href="/"
+            href="#"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-lg font-semibold"
           >
             Github <FaGithub size={30} />
@@ -32,7 +33,7 @@ const Social = () => {
         {/* ----- EMAIL ----- */}
         <li className="w-36 h-16 pr-2 flex rounded-r-xl justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-red-600">
           <a
-            href="/"
+            href="#"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-lg font-semibold"
           >
             Email <HiOutlineMail size={30} />
@@ -42,7 +43,7 @@ const Social = () => {
         {/* ----- CV ----- */}
         <li className="w-36 h-16 pr-2 flex rounded-r-xl justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-lime-600">
           <a
-            href="/"
+            href="#"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-lg font-semibold"
           >
             CV <BsFillPersonLinesFill size={30} />

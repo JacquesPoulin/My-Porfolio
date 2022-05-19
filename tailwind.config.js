@@ -11,6 +11,7 @@ module.exports = {
         sm2: { min: "375px" },
         md2: { min: "768px" },
         bp4: { max: "400px" },
+        bp4sub: { max: "374px" },
         uhd: { min: "2500px" },
         lg2: { min: "1024px" },
       },
