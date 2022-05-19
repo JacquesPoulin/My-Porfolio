@@ -3,7 +3,7 @@ import Presentation from "../components/Home/Presentation";
 
 const Home = () => {
   return (
-    <div>
+    <div name="home" className="w-full h-screen text-slate-50 bg-slate-900">
       <Presentation />
     </div>
   );
