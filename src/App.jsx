@@ -3,8 +3,7 @@ import React from "react";
 // ----- components -----
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
-import About from "./pages/About";
-// import Project from "./pages/Project";
+import Path from "./pages/Path";
 // import Contact from "./pages/Contact";
 
 // ----- style -----
@@ -16,7 +15,7 @@ function App() {
     <div>
       <NavBar />
       <Home />
-      <About />
+      <Path />
     </div>
   );
 }

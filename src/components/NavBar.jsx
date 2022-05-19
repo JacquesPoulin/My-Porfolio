@@ -5,8 +5,9 @@
 // ----- REACT -----
 import React, { useState } from "react";
 
-// ----- All React Icons : fa, hi, bs ... -----
+// ----- React Icons : fa, hi, bs ... -----
 import { FaBars, FaTimes } from "react-icons/fa";
+import { HiHome } from "react-icons/hi";
 
 // ----- datas -----
 import navLinksFr from "../../data/navLinksFr";
@@ -36,14 +37,16 @@ const NavBar = () => {
 
       {/* >> Menu */}
       <ul className="hidden md:flex">
-        {navLinksFr.map(({ id, title }) => (
-          <li
-            key={id}
-            className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
-          >
-            {title}
-          </li>
-        ))}
+        <HiHome className="w-6 h-6 text-amber-400 mr-4" />
+        {navLinksFr &&
+          navLinksFr.map(({ id, title }) => (
+            <li
+              key={id}
+              className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
+            >
+              {title}
+            </li>
+          ))}
       </ul>
 
       {/* >> Hamburger logic */}
@@ -77,16 +80,17 @@ const NavBar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center"
         }
       >
-        {navLinksFr.map(({ id, title }) => (
-          <div role="button" onClick={closeMenu}>
-            <li
-              className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl"
-              key={id}
-            >
-              {title}
-            </li>
-          </div>
-        ))}
+        {navLinksFr &&
+          navLinksFr.map(({ id, title }) => (
+            <div role="button" onClick={closeMenu}>
+              <li
+                className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl"
+                key={id}
+              >
+                {title}
+              </li>
+            </div>
+          ))}
       </ul>
 
       {/* ----- SOCIAL ICONS----- */}
