@@ -16,6 +16,7 @@ module.exports = {
         lg2: { min: "1024px" },
       },
     },
+    // ...
     animation: {
       text: "text 5s ease infinite",
     },
