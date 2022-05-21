@@ -1,4 +1,5 @@
 import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 // ----- React icons -----
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -27,9 +28,17 @@ const Presentation = () => {
         {/* ----- Description ----- */}
         <p className=" text-base py-4 max-w-[700px] leading-6 text-justify">
           Je suis un développeur full-stack spécialisé dans la création de sites
-          et applications web réactives et complètes. Un
-          <span className="text-amber-400 font-bold hinge"> CODE PROPRE </span>
-          et maintenable reste ma priorité.
+          et applications web réactives et complètes. Un CODE{" "}
+          <span className="text-amber-400 font-bold hinge">
+            <Typewriter
+              words={["propre", "maintenable"]}
+              loop={0}
+              typeSpeed={200}
+              deleteSpeed={10}
+              delaySpeed={3000}
+            />
+          </span>{" "}
+          reste ma priorité.
         </p>
 
         {/* ----- Link button to my works ----- */}
@@ -39,8 +48,8 @@ const Presentation = () => {
             className=" text-xs flex items-center group border-2 px-6 py-3 my-2 font-bold border-amber-500 rounded-md tracking-widest transition-all ease-in-out duration-200 hover:bg-amber-600 hover:border-white active:bg-amber-50"
           >
             Parcours
-            <span className="group-hover:rotate-90 duration-500">
-              <HiArrowNarrowRight className="ml-3" />
+            <span className="group-hover:rotate-90 duration-500 animate-pulse ">
+              <HiArrowNarrowRight className="ml-3 animate-pulse" />
             </span>
           </button>
         </div>
