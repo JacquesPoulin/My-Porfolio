@@ -24,9 +24,9 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed w-full h-20 flex justify-between items-center px-4 min-w-full">
+    <nav className="fixed w-full h-20 flex justify-between items-center px-4 min-w-full z-50">
       {/* >> Logo */}
-      <div>
+      <div className="z-50">
         <img
           src="/assets/images/LOGO.png"
           style={{ width: "20rem" }}
@@ -36,38 +36,37 @@ const NavBar = () => {
       </div>
 
       {/* >> Menu */}
-      <ul className="hidden md:flex">
-        <HiHome className="w-6 h-6 text-amber-400 mr-4" />
-        {navLinksFr &&
-          navLinksFr.map(({ id, title }) => (
-            <li
-              key={id}
-              className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
-            >
-              {title}
-            </li>
-          ))}
+      <ul className="hidden md:flex z-50">
+        <HiHome className="w-6 h-6 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50" />
+        {navLinksFr?.map(({ id, title }) => (
+          <li
+            key={id}
+            className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
+          >
+            {title}
+          </li>
+        ))}
       </ul>
 
-      {/* >> Hamburger logic */}
+      {/* ----- Hamburger logic ----- */}
       <div
         role="button"
         onClick={toggleNavBar}
-        className="md:hidden z-10 cursor-pointer"
+        className="md:hidden z-50 cursor-pointer"
       >
         {!isOpened ? (
           <button
             type="button"
-            className="outline-none focus:outline-none active:outline-none"
+            className="outline-none focus:outline-none active:outline-none z-50"
           >
-            <FaBars className="w-7 h-7 text-amber-400 transition-all hover:text-amber-600" />
+            <FaBars className="w-7 h-7 text-amber-400 transition-all hover:text-amber-600 z-50" />
           </button>
         ) : (
           <button
             type="button"
-            className="outline-none focus:outline-none active:outline-none"
+            className="outline-none focus:outline-none active:outline-none z-50"
           >
-            <FaTimes className="w-7 h-7 text-amber-400 hover:text-amber-600 transition-all" />
+            <FaTimes className="w-7 h-7 text-amber-400 hover:text-amber-600 transition-all z-50" />
           </button>
         )}
       </div>
@@ -77,20 +76,16 @@ const NavBar = () => {
         className={
           !isOpened
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center -z-50"
         }
       >
-        {navLinksFr &&
-          navLinksFr.map(({ id, title }) => (
-            <div role="button" onClick={closeMenu}>
-              <li
-                className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl"
-                key={id}
-              >
-                {title}
-              </li>
-            </div>
-          ))}
+        {navLinksFr?.map(({ id, title }) => (
+          <div role="button" onClick={closeMenu} key={id}>
+            <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
+              {title}
+            </li>
+          </div>
+        ))}
       </ul>
 
       {/* ----- SOCIAL ICONS----- */}

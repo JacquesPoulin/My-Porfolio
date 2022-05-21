@@ -4,6 +4,7 @@ import React from "react";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Path from "./pages/Path";
+import Portfolio from "./pages/Portfolio";
 // import Contact from "./pages/Contact";
 
 // ----- style -----
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <Home />
       <Path />
+      <Portfolio />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Skill from "../components/Path/Skill";
 
 const Path = () => {
   return (
-    <div name="path" className="w-full h-screen text-slate-50 bg-slate-900">
+    <div name="path">
       <Me />
       <Skill />
     </div>

@@ -1,6 +1,6 @@
 const skills = [
   {
-    id: 2,
+    id: 1,
     img: "/assets/images/svg/git-svgrepo-com.svg",
     alt: "logo Git",
     label: "Git",
@@ -11,7 +11,7 @@ const skills = [
   },
 
   {
-    id: 4,
+    id: 2,
     img: "/assets/images/svg/html-5-svgrepo-com.svg",
     alt: "logo HTML5",
     label: "HTML5",
@@ -21,7 +21,7 @@ const skills = [
     mastery: true,
   },
   {
-    id: 5,
+    id: 3,
     img: "/assets/images/svg/css-3-logo-svgrepo-com.svg",
     alt: "logo CSS3",
     label: "CSS3",
@@ -31,7 +31,7 @@ const skills = [
     mastery: true,
   },
   {
-    id: 6,
+    id: 4,
     img: "/assets/images/svg/javascript-logo-svgrepo-com.svg",
     alt: "logo Javascript",
     label: "Javascript",
@@ -41,7 +41,7 @@ const skills = [
     mastery: true,
   },
   {
-    id: 7,
+    id: 5,
     img: "/assets/images/svg/typescript-icon-svgrepo-com.svg",
     alt: "logo Typescript",
     label: "Typescript",
@@ -51,7 +51,7 @@ const skills = [
     mastery: false,
   },
   {
-    id: 8,
+    id: 6,
     img: "/assets/images/svg/react-svgrepo-com.svg",
     alt: "logo React",
     label: "React",
@@ -61,7 +61,7 @@ const skills = [
     mastery: true,
   },
   {
-    id: 9,
+    id: 7,
     img: "/assets/images/svg/sass-svgrepo-com.svg",
     alt: "logo Sass",
     label: "Sass",
@@ -71,7 +71,7 @@ const skills = [
     mastery: true,
   },
   {
-    id: 10,
+    id: 8,
     img: "/assets/images/svg/tailwindcss-icon-svgrepo-com.svg",
     alt: "logo Tailwind",
     label: "Tailwind",
@@ -81,7 +81,7 @@ const skills = [
     mastery: true,
   },
   {
-    id: 12,
+    id: 9,
     img: "/assets/images/svg/figma-svgrepo-com.svg",
     alt: "logo Figma",
     label: "Figma",
@@ -91,7 +91,7 @@ const skills = [
     mastery: false,
   },
   {
-    id: 13,
+    id: 10,
     img: "/assets/images/svg/nodejs-1-logo-svgrepo-com.svg",
     alt: "logo NodeJS",
     label: "NodeJS",
@@ -101,7 +101,7 @@ const skills = [
     mastery: false,
   },
   {
-    id: 14,
+    id: 11,
     img: "/assets/images/svg/mysql-logo-svgrepo-com.svg",
     alt: "logo MySQL",
     label: "MySQL",
@@ -111,7 +111,7 @@ const skills = [
     mastery: false,
   },
   {
-    id: 16,
+    id: 12,
     img: "/assets/images/svg/postman-icon-svgrepo-com.svg",
     alt: "logo Postman",
     label: "Postman",
