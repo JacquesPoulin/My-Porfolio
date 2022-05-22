@@ -38,6 +38,7 @@ const Card = () => {
               stack3,
               stack4,
               stack5,
+              stack6,
               demo,
               code,
             }) => (
@@ -97,6 +98,9 @@ const Card = () => {
                       )}
                       {stack5 && (
                         <img src={stack5} alt="" className="w-10 h-10 my-4" />
+                      )}
+                      {stack6 && (
+                        <img src={stack6} alt="" className="w-10 h-10 my-4" />
                       )}
                     </div>
 
