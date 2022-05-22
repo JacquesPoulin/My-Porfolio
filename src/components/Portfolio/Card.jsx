@@ -10,8 +10,8 @@ import Form from "./Form";
 import works from "../../../data/works.js";
 
 const Card = () => {
-  const [selected, setSelected] = useState();
-  console.log(selected);
+  const [selected, setSelected] = useState("Toutes");
+
   return (
     <div className="mb-4 p-0 max-w-4xl md:flex md:flex-wrap md:w-full">
       <Form selected={selected} setSelected={setSelected} />

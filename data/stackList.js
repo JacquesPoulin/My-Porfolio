@@ -1,4 +1,4 @@
-const technos = [
+const stackList = [
   {
     value: "HTML",
     label: "HTML",
@@ -24,6 +24,10 @@ const technos = [
     label: "REACT",
   },
   {
+    value: "API",
+    label: "API",
+  },
+  {
     value: "TypeScript",
     label: "TypeScript",
   },
@@ -37,4 +41,4 @@ const technos = [
   },
 ];
 
-export default technos;
+export default stackList;
