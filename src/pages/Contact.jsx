@@ -17,7 +17,7 @@ const Contact = () => {
             className="w-4 h-4 ml-2"
           />
           <img
-            src="../../public/assets/images/svg/tailwindcss-icon-svgrepo-com.svg"
+            src="/assets/images/svg/tailwindcss-icon-svgrepo-com.svg"
             alt="logo REACT"
             className="w-4 h-4 ml-2"
           />
