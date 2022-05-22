@@ -5,12 +5,19 @@ import Tilt from "react-tilt";
 
 // ----- Components -----
 import Form from "./Form";
+import Modale from "./Modale";
 
 // ----- Datas -----
 import works from "../../../data/works.js";
 
 const Card = () => {
+  // ----- UseStates -----
   const [selected, setSelected] = useState("Toutes");
+  const [open, setOpen] = useState(false);
+
+  // ----- Function : handle modal opening & closing -----
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
 
   return (
     <div className="mb-4 p-0 max-w-4xl md:flex md:flex-wrap md:w-full">
@@ -23,6 +30,7 @@ const Card = () => {
             ({
               id,
               img,
+              alt,
               title,
               desc,
               stack1,
@@ -44,24 +52,26 @@ const Card = () => {
                 className="group w-full m-h-full md:w-2/4"
                 key={id}
               >
-                <div className="w-full m-h-full border-2 border-white border-opacity-10 rounded-lg overflow-hidden shadow-lg">
+                <div className="w-full m-h-full border-2 border-white border-opacity-10 rounded-lg overflow-hidden shadow-lgc">
                   <div className="relative w-full overflow-hidden">
                     {/* ----- CARD Image ----- */}
                     <img
                       src={img}
-                      alt=""
-                      className="w-full h-72 object-cover object-center transition-all duration-300 transform group-hover:scale-110"
+                      alt={alt}
+                      className="w-full h-72 object-cover object-center transition-all duration-1000 transform group-hover:scale-110"
                     />
 
                     {/* ----- CARD title ----- */}
-                    <div className="w-full flex justify-evenly">
+                    <div className="w-full flex justify-between">
                       <div className="absolute top-6 left-6 inline-block pt-1.5 pb-1.5 px-2 rounded-md text-lg text-gray-100 subpixel-antialiased font-medium bg-gradient-to-br from-green-500 to-blue-500 ">
-                        <a href={demo} target="_blank" rel="noreferrer">
+                        <button type="button" onClick={handleOpen}>
                           {title}
-                        </a>
+                        </button>
                       </div>
                     </div>
                   </div>
+                  {/* ----- CARD modal ----- */}
+                  <Modale open={open} handleClose={handleClose} />
 
                   {/* ----- CARD BODY ----- */}
                   <div className="my-8 max-h-48 py-3 px-8 flex flex-col justify-around items-center">
