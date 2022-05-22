@@ -15,10 +15,10 @@ const Skill = () => {
         </div>
 
         {/* ----- list of skills ----- */}
-        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-8 ">
           {skills?.map(({ id, img, alt }) => (
             <div
-              className="shadow-md shadow-[#040c16] hover:scale-110 duration-300"
+              className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 rounded-lg"
               key={id}
             >
               <img className="w-20 mx-auto py-5" src={img} alt={alt} />

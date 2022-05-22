@@ -45,11 +45,11 @@ const Presentation = () => {
         <div>
           <button
             type="button"
-            className=" text-xs flex items-center group border-2 px-6 py-3 my-2 font-bold border-amber-500 rounded-md tracking-widest transition-all ease-in-out duration-200 hover:bg-amber-600 hover:border-white active:bg-amber-50"
+            className=" text-xs flex items-center group border-2 px-6 py-3 my-2 font-bold border-amber-500 rounded-lg tracking-widest transition-all ease-in-out duration-200 hover:bg-amber-600 hover:border-white active:bg-amber-50"
           >
             Parcours
-            <span className="group-hover:rotate-90 duration-500 animate-pulse ">
-              <HiArrowNarrowRight className="ml-3 animate-pulse" />
+            <span className="group-hover:rotate-90 duration-500">
+              <HiArrowNarrowRight className="ml-3" />
             </span>
           </button>
         </div>
