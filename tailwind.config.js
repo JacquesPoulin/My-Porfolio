@@ -13,7 +13,7 @@ module.exports = {
         bp4: { max: "400px" },
         bp4sub: { max: "374px" },
         uhd: { min: "2500px" },
-        lg2: { min: "1024px" },
+        lg2: { max: "1024px" },
       },
       animation: ["group-hover"],
     },
