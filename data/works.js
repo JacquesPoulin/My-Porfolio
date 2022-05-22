@@ -66,7 +66,7 @@ const works = [
     stack3: "/assets/images/svg/node-svgrepo-com.svg",
     stack4: "/assets/images/svg/express-svgrepo-com.svg",
     stack5: "/assets/images/svg/postman-icon-svgrepo-com.svg",
-    stack6: "../public/assets/images/svg/typescript-icon-svgrepo-com.svg",
+    stack6: "/assets/images/svg/typescript-icon-svgrepo-com.svg",
     techno: "REACT Tailwind TypeScript NodeJS MySQL Toutes",
     learn: "",
     status: "",
