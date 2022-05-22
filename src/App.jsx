@@ -5,7 +5,7 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Path from "./pages/Path";
 import Portfolio from "./pages/Portfolio";
-// import Contact from "./pages/Contact";
+import Contact from "./pages/Contact";
 
 // ----- style -----
 import "./App.css";
@@ -18,6 +18,7 @@ function App() {
       <Home />
       <Path />
       <Portfolio />
+      <Contact />
     </div>
   );
 }
