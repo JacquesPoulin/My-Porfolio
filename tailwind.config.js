@@ -15,6 +15,7 @@ module.exports = {
         uhd: { min: "2500px" },
         lg2: { min: "1024px" },
       },
+      animation: ["group-hover"],
     },
     // ...
     animation: {

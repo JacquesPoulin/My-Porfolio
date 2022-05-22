@@ -29,15 +29,7 @@ const NavBar = () => {
   return (
     <nav className="fixed w-full h-20 flex justify-between items-center px-4 min-w-full z-50">
       {/* >> Logo */}
-      <Link
-        activeClass="active"
-        to="Home"
-        spy
-        smooth
-        isDynamic
-        duration={1000}
-        onClick={closeMenu}
-      >
+      <Link to="Home" spy smooth isDynamic duration={1000} onClick={closeMenu}>
         <div className="z-50">
           <img
             src="/assets/images/LOGO.png"
@@ -50,14 +42,7 @@ const NavBar = () => {
 
       {/* >> Menu */}
       <ul className="hidden md:flex z-50">
-        <Link
-          activeClass="active"
-          to="Home"
-          spy
-          smooth
-          isDynamic
-          duration={1000}
-        >
+        <Link to="Home" spy smooth isDynamic duration={1000}>
           <HiHome className="w-6 h-6 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50" />
         </Link>
 
@@ -66,14 +51,7 @@ const NavBar = () => {
             key={id}
             className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
           >
-            <Link
-              activeClass="active"
-              to={title}
-              spy
-              smooth
-              isDynamic
-              duration={1000}
-            >
+            <Link to={title} spy smooth isDynamic duration={1000}>
               {title}
             </Link>
           </li>
@@ -114,7 +92,14 @@ const NavBar = () => {
         {navLinksFr?.map(({ id, title }) => (
           <div role="button" onClick={closeMenu} key={id}>
             <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
-              <Link to={title} isDynamic onClick={closeMenu}>
+              <Link
+                to={title}
+                spy
+                smooth
+                isDynamic
+                duration={700}
+                onClick={closeMenu}
+              >
                 {title}
               </Link>
             </li>
