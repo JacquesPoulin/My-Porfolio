@@ -1,7 +1,8 @@
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 
 // ----- Package dependencies -----
+import { Typewriter } from "react-simple-typewriter";
+import { Animated } from "react-animated-css";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 
@@ -11,23 +12,26 @@ const Presentation = () => {
       {/* ----- CONTAINER ----- */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full text-slate-50 leading-10">
         {/* ----- Name ----- */}
-        <h1
-          className="text-4xl md:text-8xl font-bold 
+        <Animated animationIn="fadeInDown" animationOut="fadeInDown" isVisible>
+          <h1
+            className="text-4xl md:text-8xl font-bold 
             bg-gradient-to-r bg-clip-text  text-transparent 
             from-amber-600 via-amber-400 to-amber-100
             animate-text
             "
-        >
-          Jacques Poulin
-        </h1>
+          >
+            Jacques Poulin
+          </h1>
+        </Animated>
 
         {/* ----- Job title ----- */}
-        <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-100">
-          Développeur Web & Mobile.
-        </h2>
-
+        <Animated animationIn="flipInX" animationOut="flipInX" isVisible>
+          <h2 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-100">
+            Développeur Web & Mobile.
+          </h2>
+        </Animated>
         {/* ----- Description ----- */}
-        <p className=" text-base py-4 max-w-[700px] leading-6 text-justify">
+        <p className="text-base py-4 max-w-[700px] leading-6 text-justify">
           Je suis un développeur full-stack spécialisé dans la création de sites
           et applications web réactives et complètes. Un CODE{" "}
           <span className="text-amber-400 font-bold hinge">
