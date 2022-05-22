@@ -5,9 +5,9 @@ const ContactForm = () => {
     <form
       method="POST"
       action="https://getform.io/f/efe185bd-ad41-4c2c-90f2-8afb415dcc17"
-      className="relative group flex flex-col max-w-[800px] w-full"
+      className="relative group flex flex-col max-w-[1000px] w-full"
     >
-      <div className="pb-8">
+      <div name="Contact" className="pb-8">
         <p className="text-4xl font-bold inline border-b-4 border-amber-500 text-gray-300">
           Contact
         </p>

@@ -5,7 +5,10 @@ import skills from "../../../data/skills";
 
 const Skill = () => {
   return (
-    <div name="skills" className="w-full h-screen text-slate-50 bg-slate-900 ">
+    <div
+      name="Parcours"
+      className="w-full h-screen text-slate-50 bg-slate-900 "
+    >
       {/* Container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="mb-10">

@@ -9,6 +9,9 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { HiHome } from "react-icons/hi";
 
+// ----- Package dependencies -----
+import { Link } from "react-scroll";
+
 // ----- datas -----
 import navLinksFr from "../../data/navLinksFr";
 import Social from "./Social";
@@ -26,24 +29,53 @@ const NavBar = () => {
   return (
     <nav className="fixed w-full h-20 flex justify-between items-center px-4 min-w-full z-50">
       {/* >> Logo */}
-      <div className="z-50">
-        <img
-          src="/assets/images/LOGO.png"
-          style={{ width: "20rem" }}
-          alt="logo du site"
-          className="cursor-pointer bp4:w-52 -m-10 bp4:-m-14"
-        />
-      </div>
+      <Link
+        activeClass="active"
+        to="Home"
+        spy
+        smooth
+        isDynamic
+        duration={1000}
+        onClick={closeMenu}
+      >
+        <div className="z-50">
+          <img
+            src="/assets/images/LOGO.png"
+            style={{ width: "20rem" }}
+            alt="logo du site"
+            className="cursor-pointer bp4:w-52 -m-10 bp4:-m-14"
+          />
+        </div>
+      </Link>
 
       {/* >> Menu */}
       <ul className="hidden md:flex z-50">
-        <HiHome className="w-6 h-6 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50" />
+        <Link
+          activeClass="active"
+          to="Home"
+          spy
+          smooth
+          isDynamic
+          duration={1000}
+        >
+          <HiHome className="w-6 h-6 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50" />
+        </Link>
+
         {navLinksFr?.map(({ id, title }) => (
           <li
             key={id}
             className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
           >
-            {title}
+            <Link
+              activeClass="active"
+              to={title}
+              spy
+              smooth
+              isDynamic
+              duration={1000}
+            >
+              {title}
+            </Link>
           </li>
         ))}
       </ul>
@@ -82,7 +114,9 @@ const NavBar = () => {
         {navLinksFr?.map(({ id, title }) => (
           <div role="button" onClick={closeMenu} key={id}>
             <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
-              {title}
+              <Link to={title} isDynamic onClick={closeMenu}>
+                {title}
+              </Link>
             </li>
           </div>
         ))}

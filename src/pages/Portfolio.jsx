@@ -4,7 +4,7 @@ import Card from "../components/Portfolio/Card";
 const Portfolio = () => {
   return (
     <div
-      name="portfolio"
+      name="Portfolio"
       className="w-full h-full flex text-slate-50 bg-slate-900"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col md:flex w-full h-full bg-slate-900 bp1:mt-28">
