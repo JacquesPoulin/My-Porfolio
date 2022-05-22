@@ -1,9 +1,13 @@
 import React from "react";
 
+// ----- React Icons -----
+import { MdDeveloperMode } from "react-icons/md";
+import { GiLaptop } from "react-icons/gi";
+
 const Me = () => {
   return (
     <div
-      name="me"
+      name="Me"
       className="w-full h-screen flex flex-col justify-center items-center text-slate-50 bg-slate-900"
     >
       <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
@@ -15,8 +19,14 @@ const Me = () => {
         <div />
       </div>
       <div className="max-w-[1000px] w-full grid md:grid-cols-2 bp4sub: gap-8 px-4">
-        <div className="text-4xl md:text-right bp4sub:text-lg font-bold bp4sub:-mb-5">
+        <div className="flex flex-col justify-center items-center text-4xl md:text-right bp4sub:text-lg font-bold bp4sub:-mb-5">
           <p>Bonjour et bienvenue sur mon portfolio !</p>
+          <div className="w-full flex justify-center my-auto">
+            <div className="w-2/4 flex justify-end bp1:justify-center bp1:mt-7">
+              <GiLaptop />
+              <MdDeveloperMode />
+            </div>
+          </div>
         </div>
         <div>
           <p className="tracking-wide text-justify bp4sub:text-sm bp4sub:pb-3">

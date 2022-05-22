@@ -1,12 +1,13 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
-// ----- React icons -----
+// ----- Package dependencies -----
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-scroll";
 
 const Presentation = () => {
   return (
-    <div className="w-full h-screen">
+    <div name="Home" className="w-full h-screen">
       {/* ----- CONTAINER ----- */}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full text-slate-50 leading-10">
         {/* ----- Name ----- */}
@@ -43,15 +44,24 @@ const Presentation = () => {
 
         {/* ----- Link button to my works ----- */}
         <div>
-          <button
-            type="button"
-            className=" text-xs flex items-center group border-2 px-6 py-3 my-2 font-bold border-amber-500 rounded-lg tracking-widest transition-all ease-in-out duration-200 hover:bg-amber-600 hover:border-white active:bg-amber-50"
+          <Link
+            activeClass="active"
+            to="Me"
+            spy
+            smooth
+            isDynamic
+            duration={1000}
           >
-            Parcours
-            <span className="group-hover:rotate-90 duration-500">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+            <button
+              type="button"
+              className=" text-lg flex items-center group border-2 px-6 py-3 my-2 font-bold border-amber-500 rounded-lg tracking-widest transition-all ease-in-out duration-200 hover:bg-amber-600 hover:border-white active:bg-amber-50"
+            >
+              Bienvenue
+              <span className="group-hover:rotate-90 duration-500">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

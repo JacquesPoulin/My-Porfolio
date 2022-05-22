@@ -42,12 +42,12 @@ const Modale = ({ open, handleClose }) => {
             component="h2"
             className="pt-5 bp1:px-4"
           >
-            Je vous invite à visiter les demos et le code source des projets
+            Je vous invite à visiter les demos et le code des projets 💻
           </Typography>
           <Typography
             id="modal-modal-description"
             sx={{ mt: 2 }}
-            classname="flex"
+            className="flex"
           >
             <a href="mailto: jacques.poulin64@gmail.com" className="bp1:px-4">
               jacques.poulin64@gmail.com

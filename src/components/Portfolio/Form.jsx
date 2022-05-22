@@ -22,7 +22,7 @@ const Form = ({ selected, setSelected }) => {
   };
 
   return (
-    <form className="w-full flex justify-between mb-4">
+    <form name="Portfolio" className="w-full flex justify-between mb-4">
       <Select
         placeholder="Stack ..."
         options={technos.sort(stackSorted)}
