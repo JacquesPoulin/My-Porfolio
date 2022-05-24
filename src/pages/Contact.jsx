@@ -24,7 +24,7 @@ const Contact = () => {
           isDynamic
           duration={1000}
         >
-          <HiHome className="absolute right-32 w-10 h-10 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 bp2:hidden z-50" />
+          <HiHome className="absolute right-32 w-10 h-10 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 bp1:right-9 z-50" />
         </Link>
         <ContactForm />
         <div className="w-full flex justify-center">
