@@ -1,5 +1,9 @@
 import React from "react";
 
+// ----- Package dependencies -----
+import { Link } from "react-scroll";
+import { HiArrowNarrowDown } from "react-icons/hi";
+
 // ----- datas -----
 import skills from "../../../data/skills";
 
@@ -26,6 +30,11 @@ const Skill = () => {
             </div>
           ))}
         </div>
+        <Link to="Portfolio" spy smooth isDynamic duration={1000}>
+          <div className="w-full flex justify-center mt-28">
+            <HiArrowNarrowDown className="w-10 h-10 cursor-pointer hover:text-amber-400 active:text-amber-600 bp2:hidden" />
+          </div>
+        </Link>
         <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full  bp4sub:mb-96">
           {" "}
         </div>
