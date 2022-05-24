@@ -84,7 +84,7 @@ const NavBar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center -z-50"
         }
       >
-        {navLinksFr?.map(({ id, title, social }) => (
+        {navLinksFr?.map(({ id, title, social, path }) => (
           <div role="button" onClick={closeMenu} key={id}>
             <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
               <Link
@@ -101,7 +101,9 @@ const NavBar = () => {
                 type="button"
                 className="cursor-pointer text-amber-50 text-lg"
               >
-                {social && social}
+                <a href={path} target="_blank" rel="noreferrer">
+                  {social && social}
+                </a>
               </button>
             </li>
           </div>
