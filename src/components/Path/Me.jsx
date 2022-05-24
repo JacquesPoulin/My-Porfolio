@@ -106,7 +106,7 @@ const Me = () => {
                 onClose={handlePopoverClose}
                 disableRestoreFocus
               >
-                <Typography sx={{ p: 1 }}>liens vers mes projets</Typography>
+                <Typography sx={{ p: 1 }}> ➡️ découvrir</Typography>
               </Popover>
             </Link>
             <p>... Bonne visite !</p>
