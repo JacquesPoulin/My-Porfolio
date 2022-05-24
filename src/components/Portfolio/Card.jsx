@@ -20,7 +20,7 @@ const Card = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div className="mb-4 p-0 max-w-4xl md:flex md:flex-wrap md:w-full">
+    <div className="max-w-[1000px] mb-4 p-0 md:flex md:flex-wrap md:w-full">
       <Form selected={selected} setSelected={setSelected} />
       {/* ----- CARD CONTAINER ----- */}
       {works &&

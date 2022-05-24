@@ -7,7 +7,6 @@ import React, { useState } from "react";
 
 // ----- React Icons : fa, hi, bs ... -----
 import { FaBars, FaTimes } from "react-icons/fa";
-import { HiHome } from "react-icons/hi";
 
 // ----- Package dependencies -----
 import { Link } from "react-scroll";
@@ -27,7 +26,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="fixed w-full h-20 flex justify-between items-center px-4 min-w-full z-50">
+    <nav className="absolute top-0 w-full h-20 flex justify-between items-center px-4 min-w-full z-50">
       {/* >> Logo */}
       <Link to="Home" spy smooth isDynamic duration={1000} onClick={closeMenu}>
         <div className="z-50">
@@ -42,17 +41,13 @@ const NavBar = () => {
 
       {/* >> Menu */}
       <ul className="hidden md:flex z-50">
-        <Link to="Home" spy smooth isDynamic duration={1000}>
-          <HiHome className="w-6 h-6 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50" />
-        </Link>
-
         {navLinksFr?.map(({ id, title }) => (
           <li
             key={id}
             className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
           >
             <Link to={title} spy smooth isDynamic duration={1000}>
-              {title}
+              {title && title}
             </Link>
           </li>
         ))}
@@ -89,7 +84,7 @@ const NavBar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center -z-50"
         }
       >
-        {navLinksFr?.map(({ id, title }) => (
+        {navLinksFr?.map(({ id, title, social }) => (
           <div role="button" onClick={closeMenu} key={id}>
             <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
               <Link
@@ -102,6 +97,12 @@ const NavBar = () => {
               >
                 {title}
               </Link>
+              <button
+                type="button"
+                className="cursor-pointer text-amber-50 text-lg"
+              >
+                {social && social}
+              </button>
             </li>
           </div>
         ))}
