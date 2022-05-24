@@ -78,29 +78,49 @@ const Card = () => {
                   <div className="my-8 max-h-48 py-3 px-8 flex flex-col justify-around items-center">
                     {/* ----- CARD title ----- */}
                     <div className="mt-4">
-                      <h1 className="title-font text-2xl text-center font-thin text-slate-50 antialiased">
+                      <h1 className="title-font text-2xl text-center font-thin text-slate-50 antialiased bp2:text-lg">
                         {desc}
                       </h1>
                     </div>
                     {/* ----- CARD stacks ------ */}
                     <div className="w-full flex justify-evenly my-3">
                       {stack1 && (
-                        <img src={stack1} alt="" className="w-10 h-10 my-4" />
+                        <img
+                          src={stack1}
+                          alt=""
+                          className="w-10 h-10 my-4 bp2:w-8 bp2:h-8"
+                        />
                       )}
                       {stack2 && (
-                        <img src={stack2} alt="" className="w-10 h-10 my-4" />
+                        <img
+                          src={stack2}
+                          alt=""
+                          className="w-10 h-10 my-4 bp2:w-8 bp2:h-8"
+                        />
                       )}
                       {stack3 && (
-                        <img src={stack3} alt="" className="w-10 h-10 my-4" />
+                        <img
+                          src={stack3}
+                          alt=""
+                          className="w-10 h-10 my-4 bp2:w-8 bp2:h-8"
+                        />
                       )}
                       {stack4 && (
                         <img src={stack4} alt="" className="w-10 h-10 my-4" />
                       )}
                       {stack5 && (
-                        <img src={stack5} alt="" className="w-10 h-10 my-4" />
+                        <img
+                          src={stack5}
+                          alt=""
+                          className="w-10 h-10 my-4 bp2:w-8 bp2:h-8"
+                        />
                       )}
                       {stack6 && (
-                        <img src={stack6} alt="" className="w-10 h-10 my-4" />
+                        <img
+                          src={stack6}
+                          alt=""
+                          className="w-10 h-10 my-4 bp2:w-8 bp2:h-8"
+                        />
                       )}
                     </div>
 
@@ -110,7 +130,7 @@ const Card = () => {
                         href={demo}
                         target="_blank"
                         rel="noreferrer"
-                        className="self-start p-2 bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent font-medium no-underline transform hover:scale-105"
+                        className="self-start p-2 bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent font-medium no-underline transform hover:scale-105 bp2:text-sm"
                       >
                         <button type="button">DEMO</button>
                       </a>
@@ -118,7 +138,7 @@ const Card = () => {
                         href={code}
                         target="_blank"
                         rel="noreferrer"
-                        className="self-start p-2 bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent font-medium no-underline transform hover:scale-105"
+                        className="self-start p-2 bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent font-medium no-underline transform hover:scale-105 bp2:text-sm"
                       >
                         <button type="button">CODE</button>
                       </a>

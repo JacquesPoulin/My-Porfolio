@@ -33,7 +33,7 @@ const Presentation = () => {
         <Animated
           animationIn="rotateInUpLeft"
           animationOut="rotateInUpLeft"
-          animationInDelay={1500}
+          animationInDelay={1200}
           isVisible
         >
           <h2 className="text-4xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-100 bp4sub:text-xl">
@@ -44,7 +44,7 @@ const Presentation = () => {
         <Animated
           animationIn="flipInX"
           animationOut="flipInX"
-          animationInDelay={2000}
+          animationInDelay={2100}
           isVisible
         >
           <p className="text-base py-4 max-w-[700px] leading-6 text-justify bp4sub:text-sm">
@@ -53,8 +53,8 @@ const Presentation = () => {
             <span className="text-amber-400 font-bold hinge">
               <Typewriter
                 words={[
-                  "PROPRE",
                   "MAINTENABLE",
+                  "PROPRE",
                   "LISIBLE",
                   "EFFICACE",
                   "PERFORMANT",
@@ -71,9 +71,10 @@ const Presentation = () => {
 
         {/* ----- Link button to my works ----- */}
         <Animated
-          animationIn="flipInX"
-          animationOut="flipInX"
-          animationInDelay={2500}
+          animationIn="fadeIn"
+          animationOut="fadeIn"
+          animationInDelay={2800}
+          animationInDuration={3000}
           isVisible
         >
           <div>
