@@ -8,8 +8,8 @@ const stackList = [
     label: "CSS",
   },
   {
-    value: "Javascript",
-    label: "Javascript",
+    value: "JS vanille",
+    label: "JS vanille",
   },
   {
     value: "SASS",

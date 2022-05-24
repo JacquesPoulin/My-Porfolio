@@ -49,7 +49,7 @@ const Social = () => {
         {/* ----- CV ----- */}
         <li className="w-36 h-16 pr-2 flex rounded-r-xl justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-lime-600">
           <a
-            href="#"
+            href="https://jacquespoulin.notion.site/RESUME-CV-2022-eea627d35cd74a93b68a0f0551b0c8be"
             target="_blank"
             rel="noreferrer"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-lg font-semibold"
