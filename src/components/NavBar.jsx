@@ -51,6 +51,15 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+
+        <a
+          href="https://jacquespoulin.notion.site/RESUME-CV-2022-eea627d35cd74a93b68a0f0551b0c8be"
+          target="_blank"
+          rel="noreferrer"
+          className="flex justify-end text-amber-400 text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 -ml-16"
+        >
+          CV
+        </a>
       </ul>
 
       {/* ----- Hamburger logic ----- */}

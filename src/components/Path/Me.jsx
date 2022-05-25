@@ -4,11 +4,13 @@ import React, { useState } from "react";
 import { MdDeveloperMode } from "react-icons/md";
 import { GiLaptop } from "react-icons/gi";
 import { HiArrowNarrowDown } from "react-icons/hi";
-import Popover from "@mui/material/Popover";
-import Typography from "@mui/material/Typography";
 
 // ----- Package dependencies -----
 import { Link } from "react-scroll";
+
+// ----- MUI components -----
+import Popover from "@mui/material/Popover";
+import Typography from "@mui/material/Typography";
 
 const Me = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -40,8 +42,8 @@ const Me = () => {
           <p>Bonjour et bienvenue sur mon portfolio !</p>
           <div className="w-full flex justify-center my-auto">
             <div className="w-2/4 flex justify-end bp1:justify-center bp1:mt-7">
-              <GiLaptop className="hover:text-amber-600" />
-              <MdDeveloperMode className="ml-10 hover:text-amber-400" />
+              <GiLaptop />
+              <MdDeveloperMode className="ml-10" />
             </div>
           </div>
         </div>
