@@ -31,7 +31,7 @@ const Me = () => {
     >
       <div className="max-w-[1000px] lg2:max-w-[900px] w-full grid grid-cols-2 gap-8">
         <div className="md:text-right bp4sub:text-lg bp4sub:mt-96 pb-8 pl-4">
-          <p className="text-4xl font-bold inline border-b-4 border-amber-500 bp4sub:text-2xl sm2:text-3xl">
+          <p className="text-4xl font-bold inline border-b-4 border-amber-500 bp4sub:text-2xl sm2:text-3xl ">
             À propos
           </p>
         </div>

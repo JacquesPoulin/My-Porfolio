@@ -19,7 +19,8 @@ module.exports = {
     },
     // ...
     animation: {
-      text: "text 5s ease infinite",
+      text: "text 2s ease infinite",
+      text2: "text 5s ease infinite",
     },
     keyframes: {
       text: {

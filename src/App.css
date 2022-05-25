@@ -28,6 +28,10 @@
   li {
     @apply cursor-pointer;
   }
+
+  a {
+    @apply cursor-pointer;
+  }
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */

@@ -24,7 +24,7 @@ const Form = ({ selected, setSelected }) => {
   return (
     <form name="Portfolio" className="w-full flex justify-between mb-4">
       <Select
-        placeholder="Stack ..."
+        placeholder={selected}
         options={technos.sort(stackSorted)}
         value={selected}
         onChange={(e) => setSelected(e.value)}
