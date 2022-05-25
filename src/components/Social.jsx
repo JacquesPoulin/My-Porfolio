@@ -6,6 +6,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+// ----- files -----
+import pdf from "../../public/assets/files/JacquesPoulin-resume-cv-2022.pdf";
+
 const Social = () => {
   return (
     <div className="hidden lg:flex fixed flex-col top-1/3 left-3 z-30">
@@ -49,12 +52,12 @@ const Social = () => {
         {/* ----- CV ----- */}
         <li className="w-36 h-16 pr-2 flex rounded-r-xl justify-between items-center -ml-28 hover:-ml-3 duration-300 bg-lime-600">
           <a
-            href="https://jacquespoulin.notion.site/RESUME-CV-2022-eea627d35cd74a93b68a0f0551b0c8be"
+            href={pdf}
             target="_blank"
             rel="noreferrer"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-lg font-semibold"
           >
-            CV <BsFillPersonLinesFill size={30} />
+            CV (pdf) <BsFillPersonLinesFill size={30} />
           </a>
         </li>
       </ul>
