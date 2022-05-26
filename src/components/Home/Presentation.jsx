@@ -48,8 +48,8 @@ const Presentation = () => {
           isVisible
         >
           <p className="text-base py-4 max-w-[700px] leading-6 text-justify bp4sub:text-sm">
-            Je suis un développeur full-stack spécialisé dans la création de
-            sites et applications web réactives et complètes. Un code{" "}
+            Je suis un jeune développeur full-stack spécialisé dans la création
+            de sites et applications web réactives et complètes. Un code{" "}
             <span className="text-amber-400 font-bold hinge">
               <Typewriter
                 words={[
