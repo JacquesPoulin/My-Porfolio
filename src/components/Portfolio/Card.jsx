@@ -12,7 +12,7 @@ import works from "../../../data/works.js";
 
 const Card = () => {
   // ----- UseStates -----
-  const [selected, setSelected] = useState("Toutes");
+  const [selected, setSelected] = useState("Tous");
   const [open, setOpen] = useState(false);
 
   // ----- Function : handle modal opening & closing -----

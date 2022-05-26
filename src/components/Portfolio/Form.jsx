@@ -31,8 +31,8 @@ const Form = ({ selected, setSelected }) => {
         className="w-60 text-slate-900 rounded-lg box-shadow-1 bg-slate-50 dark:bg-slate-900 dark:bg-opacity-[10%] bg-opacity-[10%] font-exo tracking-wide outline-none bp2:w-[45%] bp3:w-[60%] bp4:w-[90%]"
       />
 
-      <button type="button" onClick={() => setSelected("Toutes")}>
-        Voir tout
+      <button type="button" onClick={() => setSelected("Tous")}>
+        Voir tous les projets
       </button>
     </form>
   );
