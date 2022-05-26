@@ -59,7 +59,7 @@ const NavBar = () => {
           className="flex justify-end text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 -ml-16 bg-gradient-to-r bg-clip-text  text-transparent 
             from-amber-500 to-amber-50 animate-text2"
         >
-          CV
+          CV <span className="text-xs mt-2">(en ligne)</span>
         </a>
       </ul>
 
@@ -96,7 +96,7 @@ const NavBar = () => {
       >
         {navLinksFr?.map(({ id, title, social, path }) => (
           <div role="button" onClick={closeMenu} key={id}>
-            <li className="hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
+            <li className="text-amber-600 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
               <Link
                 to={title}
                 spy

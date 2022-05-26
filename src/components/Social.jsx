@@ -7,7 +7,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 // ----- files -----
-import pdf from "../../public/assets/files/JacquesPoulin-resume-cv-2022.pdf";
+import pdf from "../../public/assets/files/JacquesPoulin-cv-2022.pdf";
 
 const Social = () => {
   return (
@@ -55,9 +55,10 @@ const Social = () => {
             href={pdf}
             target="_blank"
             rel="noreferrer"
-            className="flex justify-between items-center w-full text-slate-50 pl-2 text-lg font-semibold"
+            className="flex justify-between items-center w-full text-slate-50 pl-2 text-sm font-semibold"
           >
-            CV (pdf) <BsFillPersonLinesFill size={30} />
+            CV Télécharger
+            <BsFillPersonLinesFill size={30} />
           </a>
         </li>
       </ul>
