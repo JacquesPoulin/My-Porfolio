@@ -91,7 +91,7 @@ const NavBar = () => {
         className={
           !isOpened
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center -z-50"
+            : "fixed top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center -z-50"
         }
       >
         {navLinksFr?.map(({ id, title, social, path }) => (
