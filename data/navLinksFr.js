@@ -32,7 +32,7 @@ const navLinksFr = [
   {
     id: 7,
     path: "https://jacquespoulin.notion.site/RESUME-CV-2022-eea627d35cd74a93b68a0f0551b0c8be",
-    social: "CV",
+    social: "CV (en ligne)",
   },
 ];
 
