@@ -57,7 +57,7 @@ const Social = () => {
             rel="noreferrer"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-sm font-semibold"
           >
-            CV Télécharger
+            CV (pdf)
             <BsFillPersonLinesFill size={30} />
           </a>
         </li>

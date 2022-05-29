@@ -44,23 +44,13 @@ const NavBar = () => {
         {navLinksFr?.map(({ id, title }) => (
           <li
             key={id}
-            className="text-amber-400 flex justify-end text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
+            className="text-amber-400 flex justify-end text-xl ml-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
           >
             <Link to={title} spy smooth isDynamic duration={1000}>
               {title && title}
             </Link>
           </li>
         ))}
-
-        <a
-          href="https://jacquespoulin.notion.site/RESUME-CV-2022-eea627d35cd74a93b68a0f0551b0c8be"
-          target="_blank"
-          rel="noreferrer"
-          className="flex justify-end text-xl mr-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 -ml-16 bg-gradient-to-r bg-clip-text  text-transparent 
-            from-amber-500 to-amber-50 animate-text2"
-        >
-          CV <span className="text-xs mt-2">(en ligne)</span>
-        </a>
       </ul>
 
       {/* ----- Hamburger logic ----- */}
@@ -96,7 +86,7 @@ const NavBar = () => {
       >
         {navLinksFr?.map(({ id, title, social, path }) => (
           <div role="button" onClick={closeMenu} key={id}>
-            <li className="text-amber-600 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
+            <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
               <Link
                 to={title}
                 spy
