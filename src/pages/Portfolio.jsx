@@ -1,7 +1,15 @@
 import React from "react";
+
+// ----- Package dependencies -----
+import { useTranslation } from "react-i18next";
+
+// ----- Components -----
 import Card from "../components/Portfolio/Card";
 
 const Portfolio = () => {
+  // ----- destructuring to use the translation -----
+  const { t } = useTranslation();
+
   return (
     <div
       name="Portfolio"
@@ -11,7 +19,7 @@ const Portfolio = () => {
         <div className="mb-10 bp4sub:mt-6">
           {/* ----- PAGE Title ----- */}
           <p className="text-4xl font-bold inline border-b-4  border-amber-500 bp4sub:text-2xl">
-            Projets
+            {t("projets")}
           </p>
         </div>
         <Card />

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-// ----- package -----
+// ----- Package dependencies -----
 import Tilt from "react-tilt";
+import { useTranslation } from "react-i18next";
 
 // ----- Components -----
 import Form from "./Form";
@@ -11,6 +12,9 @@ import Modale from "./Modale";
 import works from "../../../data/works.js";
 
 const Card = () => {
+  // ----- destructuring to use the translation -----
+  const { t } = useTranslation();
+
   // ----- UseStates -----
   const [selected, setSelected] = useState("Tous");
   const [open, setOpen] = useState(false);
@@ -79,7 +83,7 @@ const Card = () => {
                     {/* ----- CARD title ----- */}
                     <div className="mt-4">
                       <h1 className="title-font text-2xl text-center font-thin text-slate-50 antialiased bp2:text-lg">
-                        {desc}
+                        {t(desc)}
                       </h1>
                     </div>
                     {/* ----- CARD stacks ------ */}
