@@ -27,5 +27,3 @@ i18n
   });
 
 ReactDOM.render(<App />, document.getElementById("root"));
-
-// import { useTranslation, initReactI18next } from "react-i18next";

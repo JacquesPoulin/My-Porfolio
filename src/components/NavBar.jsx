@@ -11,9 +11,12 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
+// ----- Component -----
+import Language from "./Language";
+import Social from "./Social";
+
 // ----- datas -----
 import navLinksFr from "../../data/navLinksFr";
-import Social from "./Social";
 
 const NavBar = () => {
   // ----- destructuring to use the translation -----
@@ -54,6 +57,8 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+
+        <Language />
       </ul>
 
       {/* ----- Hamburger logic ----- */}
