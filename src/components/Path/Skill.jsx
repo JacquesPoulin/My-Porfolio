@@ -3,11 +3,15 @@ import React from "react";
 // ----- Package dependencies -----
 import { Link } from "react-scroll";
 import { HiArrowNarrowDown } from "react-icons/hi";
+import { useTranslation } from "react-i18next";
 
 // ----- datas -----
 import skills from "../../../data/skills";
 
 const Skill = () => {
+  // ----- destructuring to use the translation -----
+  const { t } = useTranslation();
+
   return (
     <div name="Parcours" className="w-full h-screen text-slate-50 bg-slate-900">
       {/* Container */}
@@ -15,7 +19,7 @@ const Skill = () => {
         <div className="md:hidden bp4sub:mb-10 bp4sub:mt-96"> </div>
         <div className="mb-10 bp4sub:mt-96">
           <p className="text-4xl font-bold inline border-b-4  border-amber-500 bp4sub:text-2xl">
-            Compétences
+            {t("competences")}
           </p>
         </div>
 

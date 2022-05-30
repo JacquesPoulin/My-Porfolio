@@ -1,0 +1,42 @@
+{
+  "Parcours": "About me",
+  "Portfolio": "Works",
+  "Contact": "Contact",
+  "langue": "Language",
+  "drapeau": "United Kingdom flag",
+  "icone": "globe icon",
+
+  "job": "Full-Stack web developer",
+  "presentation_resume": "I am a young full-stack developer specialised in the creation of responsive and complete websites and applications. A ",
+  "mot1": "MAINTENABLE",
+  "mot2": "CLEAN",
+  "mot3": "READABLE",
+  "mot4": "EFFECTIVE",
+  "mot5": "EFFICIENT",
+  "presentation_resume2": "code remains my priority.",
+  "nav_bienvenue": "Welcome",
+
+  "a_propos": "About me",
+  "bienvenue": "Hello and welcome to my portfolio !",
+  "presentation_detail": "I am Jacques Poulin, Web developer, based in the Basque Country. I work mainly with",
+  "et": "and",
+  "presentation_detail2": " I am passionate about designing websites and web applications. My goal is to improve my skills with a cleaner and more maintainable code. Do not hesitate to discover my",
+  "realisation": "WORKS.",
+  "presentation_detail3": "... Enjoy your visit !",
+  "decouvrir": "discover",
+
+  "competences": "Skills",
+  "projets": "Works",
+  "tous_les_projets": "ALL WORKS",
+  "tous": "ALL",
+
+  "Site web statique et responsive": "Full responsive website",
+  "Application dynamique avec appel et gestion d'une API": "Dynamique React app (API call)",
+  "Hackathon : application React (mobile first)": "Hackathon : mobile first app",
+  "Site e-commerce Full-Stack": "Full-Stack e-shop website",
+
+  "nom": "name",
+  "mail": "yourname@example.com",
+  "cv": "Resume",
+  "validez": "Send"
+}

@@ -1,0 +1,41 @@
+{
+  "Parcours": "Parcours",
+  "Portfolio": "Potfolio",
+  "Contact": "Contact",
+  "langue": "Langue",
+  "drapeau": "Drapeau français",
+  "icone": "icon globe",
+
+  "job": "Développeur Web & Mobile.",
+  "presentation_resume": "Je suis un jeune développeur full-stack spécialisé dans la création de sites et applications web réactives et complètes. Un code ",
+  "mot1": "MAINTENABLE",
+  "mot2": "PROPRE",
+  "mot3": "LISIBLE",
+  "mot4": "EFFICACE",
+  "mot5": "PERFORMANT",
+  "presentation_resume2": "reste ma priorité.",
+  "nav_bienvenue": "Bienvenue",
+
+  "a_propos": "À propos",
+  "bienvenue": "Bonjour et bienvenue sur mon portfolio !",
+  "presentation_detail": "Je suis Jacques Poulin, développeur Full-Stack, basé au Pays Basque. Je travaille principalement avec",
+  "et": "et",
+  "presentation_detail2": "Je suis passionné par la conception de sites et applications Web. Mon amour du développement me permet d'être polyvalent et adaptable aux tâches qui me sont confiées. Mon objectif est de monter en compétences avec un code toujours plus propre et maintenable. N'hésitez pas à découvrir mes",
+  "realisation": " PROJETS.",
+  "presentation_detail3": "... Bonne visite !",
+  "decouvrir": "découvrir",
+
+  "competences": "Compétences",
+  "projets": "Projets",
+  "tous_les_projets": "Voir tous les projets",
+  "tous": "Tous",
+  "Site web statique et responsive": "Site web statique et responsive",
+  "Application dynamique avec appel et gestion d'une API": "Application dynamique avec appel et gestion d'une API",
+  "Hackathon : application React (mobile first)": "Hackathon : application React (mobile first)",
+  "Site e-commerce Full-Stack": "Site e-commerce Full-Stack",
+
+  "nom": "nom",
+  "mail": "votrenom@exemple.com",
+  "cv": "CV",
+  "validez": "Validez"
+}

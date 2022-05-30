@@ -2,20 +2,26 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 // ! ⬆️⬆️⬆️ The <div> element has a child <FaBars> icon element that allows keyboard interaction
 
-// ----- REACT -----
 import React, { useState } from "react";
 
 // ----- React Icons : fa, hi, bs ... -----
 import { FaBars, FaTimes } from "react-icons/fa";
 
 // ----- Package dependencies -----
+import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
+
+// ----- Component -----
+import Language from "./Language";
+import Social from "./Social";
 
 // ----- datas -----
 import navLinksFr from "../../data/navLinksFr";
-import Social from "./Social";
 
 const NavBar = () => {
+  // ----- destructuring to use the translation -----
+  const { t } = useTranslation();
+
   // ----- STATES -----
   const [isOpened, setIsOpened] = useState(false);
 
@@ -47,10 +53,12 @@ const NavBar = () => {
             className="text-amber-400 flex justify-end text-xl ml-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
           >
             <Link to={title} spy smooth isDynamic duration={1000}>
-              {title && title}
+              {t(title && title)}
             </Link>
           </li>
         ))}
+
+        <Language />
       </ul>
 
       {/* ----- Hamburger logic ----- */}
@@ -95,14 +103,14 @@ const NavBar = () => {
                 duration={700}
                 onClick={closeMenu}
               >
-                {title}
+                {t(title && title)}
               </Link>
               <button
                 type="button"
                 className="cursor-pointer text-amber-50 text-lg"
               >
                 <a href={path} target="_blank" rel="noreferrer">
-                  {social && social}
+                  {t(social && social)}
                 </a>
               </button>
             </li>
@@ -111,7 +119,6 @@ const NavBar = () => {
       </ul>
 
       {/* ----- SOCIAL ICONS----- */}
-
       <Social />
     </nav>
   );

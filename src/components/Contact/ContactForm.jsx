@@ -1,6 +1,12 @@
 import React from "react";
 
+// ----- Package dependencies -----
+import { useTranslation } from "react-i18next";
+
 const ContactForm = () => {
+  // ----- destructuring to use the translation -----
+  const { t } = useTranslation();
+
   return (
     <form
       method="POST"
@@ -15,14 +21,14 @@ const ContactForm = () => {
       <input
         className="bg-[#ccd6f6] p-2 placeholder:italic placeholder:text-slate-400 block w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm text-slate-900 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
         type="text"
-        placeholder="Nom"
+        placeholder={t("nom")}
         name="nom"
         required
       />
       <input
         className="my-4 p-2 bg-[#ccd6f6] placeholder:italic text-slate-900 placeholder:text-slate-400 block w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1"
         type="email"
-        placeholder="votrenom@exemple.com"
+        placeholder={t("mail")}
         name="email"
         required
       />
@@ -37,7 +43,7 @@ const ContactForm = () => {
         type="submit"
         className="text-white border-2 hover:bg-amber-600 hover:border-amber-50 px-4 py-3 my-8 mx-auto flex items-center rounded-lg"
       >
-        Validez
+        {t("validez")}
       </button>
     </form>
   );
