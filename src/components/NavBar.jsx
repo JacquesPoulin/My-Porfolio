@@ -79,7 +79,7 @@ const NavBar = () => {
             type="button"
             className="outline-none focus:outline-none active:outline-none z-50"
           >
-            <FaTimes className="w-7 h-7 text-amber-400 hover:text-amber-600 transition-all z-50" />
+            <FaTimes className="w-7 h-7 text-amber-400 hover:text-amber-600 transition-all z-40" />
           </button>
         )}
       </div>

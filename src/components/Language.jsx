@@ -15,23 +15,21 @@ const Language = () => {
   // ----- destructuring to use the translation -----
   const { t } = useTranslation();
 
+  // ----- STATES & variables-----
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
+
+  // ----- Functions ------
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
     <div className="ml-96 -mt-1 flex justify-end items-center absolute">
-      <Button
-        id="basic-button"
-        aria-controls={open ? "basic-menu" : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
-        onClick={handleClick}
-      >
+      <Button onClick={handleClick}>
         <img
           src="/assets/images/svg/globe-svgrepo-com.svg"
           alt={t("icone")}
@@ -43,9 +41,6 @@ const Language = () => {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        MenuListProps={{
-          "aria-labelledby": "basic-button",
-        }}
       >
         {languages.map(({ code, img, languageName, countryCode }) => (
           <MenuItem key={countryCode} onClick={handleClose}>

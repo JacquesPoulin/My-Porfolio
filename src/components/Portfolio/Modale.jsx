@@ -8,8 +8,12 @@ import Box from "@mui/material/Box";
 
 // ----- Package dependencies -----
 import { Animated } from "react-animated-css";
+import { useTranslation } from "react-i18next";
 
 const Modale = ({ open, handleClose }) => {
+  // ----- destructuring to use the translation -----
+  const { t } = useTranslation();
+
   // ----- Function : modal styling -----
   const style = {
     position: "absolute",
@@ -42,7 +46,7 @@ const Modale = ({ open, handleClose }) => {
               component="h2"
               className="bp1:px-4 text-center"
             >
-              Merci pour le temps accordé à l&apos;étude de mon Portfolio !
+              {t("remerciements")}
             </Typography>
           </Animated>
           <Animated
@@ -57,8 +61,7 @@ const Modale = ({ open, handleClose }) => {
               component="h2"
               className="pt-5 bp1:px-4 text-center"
             >
-              Je serai ravi de vous rencontrer si vous désirez en savoir plus à
-              mon sujet.
+              {t("ravi")}
             </Typography>
           </Animated>
 
@@ -74,8 +77,7 @@ const Modale = ({ open, handleClose }) => {
               component="h2"
               className="pt-5 text-center"
             >
-              Je vous invite donc à regarder les DEMOS ainsi que le CODE de mes
-              projets
+              {t("invitation")}
             </Typography>
           </Animated>
           <Animated
