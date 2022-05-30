@@ -75,20 +75,13 @@ const Presentation = () => {
           isVisible
         >
           <div>
-            <Link
-              activeClass="active"
-              to="Me"
-              spy
-              smooth
-              isDynamic
-              duration={1000}
-            >
+            <Link to="Me" smooth isDynamic duration={1000}>
               <button
                 type="button"
-                className=" text-lg flex items-center group border-2 px-6 py-3 my-2 font-bold border-amber-500 rounded-lg tracking-widest transition-all ease-in-out duration-200 hover:bg-amber-600 hover:border-white active:bg-amber-50 bp4sub:text-sm bp4sub:px-3 bp4sub:py-3 bp4sub:my-2 bp4sub:hidden"
+                className="text-lg flex items-center group border-2 px-6 py-3 my-2 font-bold border-amber-500 rounded-lg tracking-widest transition-all ease-in-out duration-200 hover:bg-amber-600 hover:border-white active:bg-amber-50 bp4sub:text-sm bp4sub:px-3 bp4sub:py-3 bp4sub:my-2 bp4sub:hidden"
               >
                 {t("nav_bienvenue")}
-                <span className="group-hover:rotate-90 duration-500">
+                <span className="group-hover:rotate-90 duration-200">
                   <HiArrowNarrowRight className="ml-3" />
                 </span>
               </button>
