@@ -5,11 +5,18 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { RiDownload2Line } from "react-icons/ri";
+
+// ----- Package dependencies -----
+import { useTranslation } from "react-i18next";
 
 // ----- files -----
 import pdf from "../../public/assets/files/JacquesPoulin-cv-2022.pdf";
 
 const Social = () => {
+  // ----- destructuring to use the translation -----
+  const { t } = useTranslation();
+
   return (
     <div className="hidden lg:flex fixed flex-col top-1/3 left-3 z-30">
       <ul className="z-30">
@@ -57,7 +64,8 @@ const Social = () => {
             rel="noreferrer"
             className="flex justify-between items-center w-full text-slate-50 pl-2 text-sm font-semibold"
           >
-            CV (pdf)
+            {t("cv")}
+            <RiDownload2Line size={20} />
             <BsFillPersonLinesFill size={30} />
           </a>
         </li>
