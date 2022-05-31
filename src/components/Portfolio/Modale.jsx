@@ -44,7 +44,7 @@ const Modale = ({ open, handleClose }) => {
               id="modal-modal-title"
               variant="h4"
               component="h2"
-              className="bp1:px-4 text-center"
+              className="bp1:px-24 text-center"
             >
               {t("remerciements")}
             </Typography>
@@ -59,7 +59,7 @@ const Modale = ({ open, handleClose }) => {
               id="modal-modal-title"
               variant="h8"
               component="h2"
-              className="pt-5 bp1:px-4 text-center"
+              className="pt-5 bp1:px-24 text-center"
             >
               {t("ravi")}
             </Typography>
@@ -75,7 +75,7 @@ const Modale = ({ open, handleClose }) => {
               id="modal-modal-title"
               variant="h8"
               component="h2"
-              className="pt-5 text-center"
+              className="pt-5 bp1:px-24 text-center"
             >
               {t("invitation")}
             </Typography>
@@ -93,7 +93,7 @@ const Modale = ({ open, handleClose }) => {
             >
               <a
                 href="mailto: jacques.poulin64@gmail.com"
-                className="bp1:px-4 "
+                className="bp1:px-24"
               >
                 jacques.poulin64@gmail.com
               </a>
@@ -110,7 +110,7 @@ const Modale = ({ open, handleClose }) => {
               sx={{ mt: 2 }}
               className="flex justify-center"
             >
-              <a href="tel:+336-79-17-71-58" className="bp1:px-4">
+              <a href="tel:+336-79-17-71-58" className="bp1:px-24">
                 (+33) 6 79 17 71 58
               </a>
             </Typography>
