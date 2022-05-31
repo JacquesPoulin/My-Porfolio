@@ -33,6 +33,7 @@ const Modale = ({ open, handleClose }) => {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
+        className="bp1:z-50"
       >
         <Box sx={style} className="rounded-lg bg-slate-900">
           <Animated
