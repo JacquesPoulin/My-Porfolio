@@ -40,7 +40,12 @@ const Presentation = () => {
           animationInDelay={1200}
           isVisible
         >
-          <h2 className="text-4xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-100 bp4sub:text-xl">
+          <h2
+            className="text-4xl md:text-4xl font-bold 
+            bg-gradient-to-r bg-clip-text  text-transparent 
+            from-amber-600 via-amber-400 to-amber-100
+            animate-text bp4sub:text-xl"
+          >
             {t("job")}
           </h2>
         </Animated>

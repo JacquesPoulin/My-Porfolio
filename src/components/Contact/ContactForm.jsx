@@ -14,7 +14,7 @@ const ContactForm = () => {
       className="relative group flex flex-col max-w-[1000px] w-full"
     >
       <div name="Contact" className="pb-8">
-        <p className="text-4xl font-bold inline border-b-4 border-amber-500 text-gray-300">
+        <p className="text-4xl font-bold inline border-b-4 border-amber-500 bp4sub:text-2xl sm2:text-3xl">
           Contact
         </p>
       </div>

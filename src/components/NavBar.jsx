@@ -35,6 +35,9 @@ const NavBar = () => {
     <nav className="absolute top-0 w-full h-20 flex justify-between items-center px-4 min-w-full z-50">
       {/* >> Logo */}
       <Link to="Home" spy smooth isDynamic duration={1000} onClick={closeMenu}>
+        <div className="absolute flex justify-center mt-8 sm5:mt-16 sm5:ml-28 md:hidden z-50">
+          <Language />
+        </div>
         <div className="z-50">
           <img
             src="/assets/images/LOGO.png"
@@ -86,6 +89,7 @@ const NavBar = () => {
 
       {/* ----- MOBILE MENU ----- */}
       <ul
+        div
         className={
           !isOpened
             ? "hidden"

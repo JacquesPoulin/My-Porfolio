@@ -38,7 +38,7 @@ const Me = () => {
       <Fade bottom>
         <div className="max-w-[1000px] lg2:max-w-[900px] w-full grid grid-cols-2 gap-8">
           <div className="md:text-right bp4sub:text-lg bp4sub:mt-96 pb-8 pl-4">
-            <p className="text-4xl font-bold inline border-b-4 border-amber-500 bp4sub:text-2xl sm2:text-3xl ">
+            <p className="text-4xl font-bold inline border-b-4 border-amber-500 bp4sub:text-2xl sm2:text-3xl">
               {t("a_propos")}
             </p>
           </div>
@@ -57,8 +57,8 @@ const Me = () => {
           </div>
 
           <div>
-            <p className="tracking-wide text-justify bp4sub:text-sm bp4sub:pb-3">
-              {t("presentation_detail")}
+            <div className="tracking-wide text-justify bp4sub:text-sm bp4sub:pb-3">
+              <p>{t("presentation_detail")}</p>
               <span className="text-amber-400 hover:text-amber-500">
                 {" "}
                 ReactJS
@@ -118,7 +118,7 @@ const Me = () => {
                 </Popover>
               </Link>
               <p>{t("presentation_detail3")}</p>
-            </p>
+            </div>
           </div>
         </div>
 
