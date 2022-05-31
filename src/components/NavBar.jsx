@@ -11,6 +11,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
 
+// ----- Package components -----
+import { HideBetween } from "react-hide-on-scroll";
+
 // ----- Component -----
 import Language from "./Language";
 import Social from "./Social";
@@ -34,19 +37,28 @@ const NavBar = () => {
   return (
     <nav className="absolute top-0 w-full h-20 flex justify-between items-center px-4 min-w-full z-50">
       {/* >> Logo */}
-      <Link to="Home" spy smooth isDynamic duration={1000} onClick={closeMenu}>
-        <div className="absolute flex justify-center mt-8 sm5:mt-16 sm5:ml-28 md:hidden z-50">
-          <Language />
-        </div>
-        <div className="z-50">
-          <img
-            src="/assets/images/LOGO.png"
-            style={{ width: "20rem" }}
-            alt="logo du site"
-            className="cursor-pointer bp4:w-52 -m-10 bp4:-m-14"
-          />
-        </div>
-      </Link>
+
+      <div className="z-50">
+        <HideBetween
+          height
+          inverse
+          startHeight={0}
+          endHeight={1}
+          showOnPageInit={true}
+        >
+          <div className="absolute flex justify-center mt-8 sm5:mt-16 sm5:ml-28 md:hidden z-50">
+            <Language />
+          </div>
+        </HideBetween>
+
+        <img
+          src="/assets/images/LOGO.png"
+          style={{ width: "20rem" }}
+          alt="logo du site"
+          className="bp4:w-52 -m-10 bp4:-m-14"
+          disabled
+        />
+      </div>
 
       {/* >> Menu */}
       <ul className="hidden md:flex z-50">
