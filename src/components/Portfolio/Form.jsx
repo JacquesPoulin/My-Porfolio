@@ -35,7 +35,14 @@ const Form = ({ selected, setSelected }) => {
         className="w-60 text-slate-900 rounded-lg box-shadow-1 bg-slate-50 dark:bg-slate-900 dark:bg-opacity-[10%] bg-opacity-[10%] font-exo tracking-wide outline-none bp2:w-[45%] bp3:w-[60%] bp4:w-[90%]"
       />
 
-      <button type="button" onClick={() => setSelected(t("tous"))}>
+      <button
+        type="button"
+        onClick={() => setSelected(t("tous"))}
+        className="font-bold 
+            bg-gradient-to-r bg-clip-text  text-transparent 
+            from-amber-600 via-amber-400 to-amber-100
+            animate-text"
+      >
         {t("tous_les_projets")}
       </button>
     </form>

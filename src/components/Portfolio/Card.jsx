@@ -25,7 +25,11 @@ const Card = () => {
 
   return (
     <div className="max-w-[1000px] mb-4 p-0 md:flex md:flex-wrap md:w-full">
-      <Form selected={selected} setSelected={setSelected} />
+      <Form
+        selected={selected}
+        setSelected={setSelected}
+        className="bp1:z-50"
+      />
       {/* ----- CARD CONTAINER ----- */}
       {works &&
         works
@@ -134,7 +138,7 @@ const Card = () => {
                         href={demo}
                         target="_blank"
                         rel="noreferrer"
-                        className="self-start p-2 bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent font-medium no-underline transform hover:scale-105 bp2:text-sm"
+                        className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
                       >
                         <button type="button">DEMO</button>
                       </a>
@@ -142,7 +146,7 @@ const Card = () => {
                         href={code}
                         target="_blank"
                         rel="noreferrer"
-                        className="self-start p-2 bg-gradient-to-br from-green-500 to-blue-500 bg-clip-text text-transparent font-medium no-underline transform hover:scale-105 bp2:text-sm"
+                        className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
                       >
                         <button type="button">CODE</button>
                       </a>
