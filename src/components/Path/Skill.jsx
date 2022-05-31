@@ -20,7 +20,7 @@ const Skill = () => {
       {/* Container */}
       <div className="max-w-[1000px] lg2:max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="md:hidden bp4sub:mb-10 bp4sub:mt-96"> </div>
-        <Fade top>
+        <Fade bottom>
           <div className="mb-10 bp4sub:mt-96">
             <p className="text-4xl font-bold inline border-b-4  border-amber-500 bp4sub:text-2xl">
               {t("competences")}
