@@ -27,7 +27,7 @@ const Modale = ({ open, handleClose }) => {
     p: 2,
   };
   return (
-    <div>
+    <div className="">
       <Modal
         open={open}
         onClose={handleClose}
