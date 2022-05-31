@@ -16,7 +16,7 @@ const Card = () => {
   const { t } = useTranslation();
 
   // ----- UseStates -----
-  const [selected, setSelected] = useState("Tous");
+  const [selected, setSelected] = useState(t("tous"));
   const [open, setOpen] = useState(false);
 
   // ----- Function : handle modal opening & closing -----
