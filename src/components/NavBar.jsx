@@ -44,7 +44,7 @@ const NavBar = () => {
           inverse
           startHeight={0}
           endHeight={1}
-          showOnPageInit={true}
+          showOnPageInit
         >
           <div className="absolute flex justify-center mt-8 sm5:mt-16 sm5:ml-28 md:hidden z-50">
             <Language />
