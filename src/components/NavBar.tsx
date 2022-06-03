@@ -3,23 +3,19 @@
 // ! ⬆️⬆️⬆️ The <div> element has a child <FaBars> icon element that allows keyboard interaction
 
 import React, { useState } from "react";
-
-// ----- React Icons : fa, hi, bs ... -----
-import { FaBars, FaTimes } from "react-icons/fa";
-
-// ----- Package dependencies -----
-import { useTranslation } from "react-i18next";
-import { Link } from "react-scroll";
-
 // ----- Package components -----
 import { HideBetween } from "react-hide-on-scroll";
+// ----- Package dependencies -----
+import { useTranslation } from "react-i18next";
+// ----- React Icons : fa, hi, bs ... -----
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
+// ----- datas -----
+import navLinks from "../../data/navLinks";
 // ----- Component -----
 import Language from "./Language";
 import Social from "./Social";
-
-// ----- datas -----
-import navLinksFr from "../../data/navLinksFr";
 
 const NavBar = () => {
   // ----- destructuring to use the translation -----
@@ -62,12 +58,12 @@ const NavBar = () => {
 
       {/* >> Menu */}
       <ul className="hidden md:flex z-50">
-        {navLinksFr?.map(({ id, title }) => (
+        {navLinks?.map(({ id, title }) => (
           <li
             key={id}
             className="text-amber-400 flex justify-end text-xl ml-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
           >
-            <Link to={title} spy smooth isDynamic duration={1000}>
+            <Link to={title} smooth duration={1000}>
               {t(title && title)}
             </Link>
           </li>
@@ -101,24 +97,16 @@ const NavBar = () => {
 
       {/* ----- MOBILE MENU ----- */}
       <ul
-        div
         className={
           !isOpened
             ? "hidden"
-            : "fixed top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center -z-50"
+            : "fixed top-0 left-0 w-full h-screen bg-slate-900 text-slate-50 flex flex-col justify-center items-center -z-40"
         }
       >
-        {navLinksFr?.map(({ id, title, social, path }) => (
+        {navLinks?.map(({ id, title, social, path }) => (
           <div role="button" onClick={closeMenu} key={id}>
             <li className="text-amber-400 hover:text-amber-600 active:text-amber-600 py-6 text-4xl z-50">
-              <Link
-                to={title}
-                spy
-                smooth
-                isDynamic
-                duration={700}
-                onClick={closeMenu}
-              >
+              <Link to={title} smooth duration={700} onClick={closeMenu}>
                 {t(title && title)}
               </Link>
               <button

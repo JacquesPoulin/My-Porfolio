@@ -1,11 +1,9 @@
-import React from "react";
-import PropTypes from "prop-types";
-
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
 // ----- Components -----
 import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
-import Box from "@mui/material/Box";
-
+import PropTypes from "prop-types";
+import React from "react";
 // ----- Package dependencies -----
 import { Animated } from "react-animated-css";
 import { useTranslation } from "react-i18next";

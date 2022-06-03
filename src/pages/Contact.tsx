@@ -1,11 +1,9 @@
 import React from "react";
-
 // ----- Package dependencies -----
 import { HiHome } from "react-icons/hi";
-import { Link } from "react-scroll";
-
 // ----- Packages Components -----
 import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
 
 // ----- Components -----
 import ContactForm from "../components/Contact/ContactForm";

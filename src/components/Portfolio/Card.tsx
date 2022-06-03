@@ -1,15 +1,13 @@
 import React, { useState } from "react";
-
+import { useTranslation } from "react-i18next";
 // ----- Package dependencies -----
 import Tilt from "react-tilt";
-import { useTranslation } from "react-i18next";
-
-// ----- Components -----
-import Form from "./Form";
-import Modale from "./Modale";
 
 // ----- Datas -----
 import works from "../../../data/works.js";
+// ----- Components -----
+import Form from "./Form";
+import Modale from "./Modale";
 
 const Card = () => {
   // ----- destructuring to use the translation -----

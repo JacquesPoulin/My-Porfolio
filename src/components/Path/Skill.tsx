@@ -1,12 +1,10 @@
 import React from "react";
-
-// ----- Package dependencies -----
-import { Link } from "react-scroll";
-import { HiArrowNarrowDown } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
-
+import { HiArrowNarrowDown } from "react-icons/hi";
 // ----- Packages Components -----
 import Fade from "react-reveal/Fade";
+// ----- Package dependencies -----
+import { Link } from "react-scroll";
 
 // ----- datas -----
 import skills from "../../../data/skills";

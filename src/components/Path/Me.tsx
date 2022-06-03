@@ -1,18 +1,15 @@
-import React, { useState } from "react";
-
-// ----- React Icons -----
-import { MdDeveloperMode } from "react-icons/md";
-import { GiLaptop } from "react-icons/gi";
-import { HiArrowNarrowDown } from "react-icons/hi";
-
-// ----- Package dependencies -----
-import { Link } from "react-scroll";
-import { useTranslation } from "react-i18next";
-
 // ----- Packages Components -----
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
+import { GiLaptop } from "react-icons/gi";
+import { HiArrowNarrowDown } from "react-icons/hi";
+// ----- React Icons -----
+import { MdDeveloperMode } from "react-icons/md";
 import Fade from "react-reveal/Fade";
+// ----- Package dependencies -----
+import { Link } from "react-scroll";
 
 const Me = () => {
   // ----- destructuring to use the translation -----

@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-
-// ----- Package dependencies -----
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
-
 // ----- Package : MUI components -----
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import i18next from "i18next";
+import React, { useState } from "react";
+// ----- Package dependencies -----
+import { useTranslation } from "react-i18next";
 
 import languages from "../../data/languages";
 

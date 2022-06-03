@@ -1,14 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-
+// ----- Package dependencies -----
+import { useTranslation } from "react-i18next";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 // ----- All React Icons : fa, hi, bs ... -----
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { RiDownload2Line } from "react-icons/ri";
-
-// ----- Package dependencies -----
-import { useTranslation } from "react-i18next";
 
 // ----- files -----
 import pdf from "../../public/assets/files/JacquesPoulin-cv-2022.pdf";

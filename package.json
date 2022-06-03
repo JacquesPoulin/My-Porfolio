@@ -4,10 +4,12 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "echo '----- Checking Frontend...' && prettier --debug-check . && eslint --ext .jsx . && echo '----- Done!'",
-    "fix": "prettier --write . && eslint --fix --ext .jsx .",
+    "build": "tsc && vite build",
+    "serve": "vite preview",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier  --loglevel warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint": "npm run lint:format && npm run lint:fix ",
+    "type-check": "tsc",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -21,8 +23,6 @@
     "i18next": "^21.8.5",
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.1",
-    "prop-types": "^15.8.1",
-    "proptypes": "^1.1.0",
     "react": "^17.0.2",
     "react-animated-css": "^1.2.1",
     "react-dom": "^17.0.2",
@@ -34,10 +34,15 @@
     "react-scroll": "^1.8.7",
     "react-select": "^5.3.2",
     "react-simple-typewriter": "^3.0.1",
-    "react-tilt": "^0.1.4"
+    "react-tilt": "^0.1.4",
+    "typescript": "^4.7.2"
   },
   "devDependencies": {
-    "@types/classnames": "^2.3.1",
+    "@types/react": "^18.0.10",
+    "@types/react-dom": "^18.0.5",
+    "@types/react-scroll": "^1.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
     "@vitejs/plugin-react": "^1.0.7",
     "eslint": "^8.11.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -48,7 +53,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "husky": "^7.0.0",
+    "lint-staged": "^13.0.0",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",

@@ -1,5 +1,4 @@
 import React from "react";
-
 // ----- Package dependencies -----
 import { useTranslation } from "react-i18next";
 

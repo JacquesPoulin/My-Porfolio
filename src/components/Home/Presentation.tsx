@@ -1,11 +1,10 @@
 import React from "react";
-
-// ----- Package dependencies -----
-import { Typewriter } from "react-simple-typewriter";
 import { Animated } from "react-animated-css";
+import { useTranslation } from "react-i18next";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
-import { useTranslation } from "react-i18next";
+// ----- Package dependencies -----
+import { Typewriter } from "react-simple-typewriter";
 
 const Presentation = () => {
   // ----- destructuring to use the translation -----

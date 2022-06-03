@@ -1,9 +1,8 @@
-import React from "react";
 import PropTypes from "prop-types";
-
+import React from "react";
+import { useTranslation } from "react-i18next";
 // ----- Package dependencies -----
 import Select from "react-select";
-import { useTranslation } from "react-i18next";
 
 // ----- Datas -----
 import technos from "../../../data/stackList";
