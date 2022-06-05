@@ -1,9 +1,5 @@
 import React from "react";
 
-// ----- Package dependencies -----
-import { HiHome } from "react-icons/hi";
-import { Link } from "react-scroll";
-
 // ----- Packages Components -----
 import Fade from "react-reveal/Fade";
 
@@ -18,16 +14,6 @@ const Contact = () => {
     >
       <Fade bottom>
         <div className="max-w-[700px] p-4 mx-auto flex flex-col md:flex w-full h-full bg-slate-900 bp1:mt-28 md:mt-28">
-          <Link
-            activeClass="active"
-            to="Home"
-            spy
-            smooth
-            isDynamic
-            duration={1000}
-          >
-            <HiHome className="absolute right-32 w-10 h-10 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 bp1:right-9 z-50 bp3:w-8 bp3:h-8" />
-          </Link>
           <ContactForm />
           <div className="w-full flex justify-center mt-10">
             <p className="text-xs"> made with</p>

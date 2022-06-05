@@ -14,7 +14,7 @@ i18n
   .use(LanguageDetector) // automatically detect language
   .use(HttpApi) // fetch all the stored json translations folders
   .init({
-    supportedLngs: ["en", "fr"],
+    supportedLngs: ["fr", "en"],
     fallbackLng: "fr",
     detection: {
       order: ["path", "cookie", "htmlTag", "localStorage", "subdomain"],
