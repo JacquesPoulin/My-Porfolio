@@ -26,7 +26,9 @@ const Contact = () => {
             isDynamic
             duration={1000}
           >
-            <HiHome className="absolute right-32 w-10 h-10 text-amber-400 mr-4 cursor-pointer transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 bp1:right-9 z-50 bp3:w-8 bp3:h-8" />
+            <div className="full flex justify-end">
+              <HiHome className=" absolute bp1:right-0 bp3:w-8 bp3:h-8 text-amber-400  w-10 h-10 transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50 " />
+            </div>
           </Link>
           <ContactForm />
         </Fade>
@@ -44,6 +46,7 @@ const Contact = () => {
           />
           <p className="text-xs ml-2"> and lot of 💖</p>
         </div>
+
       </div>
     </div>
   );

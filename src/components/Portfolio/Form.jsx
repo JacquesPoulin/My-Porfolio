@@ -32,7 +32,7 @@ const Form = ({ selected, setSelected }) => {
         options={technos.sort(stackSorted)}
         value={selected}
         onChange={(e) => setSelected(e.value)}
-        className="w-60 text-slate-900 rounded-lg box-shadow-1 bg-slate-50 dark:bg-slate-900 dark:bg-opacity-[10%] bg-opacity-[10%] font-exo tracking-wide outline-none bp2:w-[45%] bp3:w-[60%] bp4:w-[90%]"
+        className="w-52 text-slate-900 rounded-lg box-shadow-1 bg-slate-50 dark:bg-slate-900 dark:bg-opacity-[10%] bg-opacity-[10%] font-exo tracking-wide outline-none bp3:w-36"
       />
 
       <button
