@@ -1,9 +1,5 @@
 import React from "react";
 
-// ----- Package dependencies -----
-import { HiHome } from "react-icons/hi";
-import { Link } from "react-scroll";
-
 // ----- Packages Components -----
 import Fade from "react-reveal/Fade";
 
@@ -16,8 +12,9 @@ const Contact = () => {
       name="Contact"
       className="w-full h-full flex text-slate-50 bg-slate-900"
     >
-      <div className="max-w-[700px] p-4 mx-auto flex flex-col md:flex w-full h-full bg-slate-900 bp1:mt-28 md:mt-28">
-        <Fade bottom>
+
+      <Fade bottom>
+        <div className="max-w-[700px] p-4 mx-auto flex flex-col md:flex w-full h-full bg-slate-900 bp1:mt-28 md:mt-28">
           <Link
             activeClass="active"
             to="Home"
