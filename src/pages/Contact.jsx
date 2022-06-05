@@ -31,21 +31,22 @@ const Contact = () => {
             </div>
           </Link>
           <ContactForm />
-          <div className="w-full flex justify-center mt-10">
-            <p className="text-xs"> made with</p>
-            <img
-              src="/assets/images/svg/react-svgrepo-com.svg"
-              alt="logo REACT"
-              className="w-4 h-4 ml-2"
-            />
-            <img
-              src="/assets/images/svg/tailwindcss-icon-svgrepo-com.svg"
-              alt="logo REACT"
-              className="w-4 h-4 ml-2"
-            />
-            <p className="text-xs ml-2"> and lot of 💖</p>
-          </div>
         </Fade>
+        <div className="w-full flex justify-center mt-10">
+          <p className="text-xs"> made with</p>
+          <img
+            src="/assets/images/svg/react-svgrepo-com.svg"
+            alt="logo REACT"
+            className="w-4 h-4 ml-2"
+          />
+          <img
+            src="/assets/images/svg/tailwindcss-icon-svgrepo-com.svg"
+            alt="logo REACT"
+            className="w-4 h-4 ml-2"
+          />
+          <p className="text-xs ml-2"> and lot of 💖</p>
+        </div>
+
       </div>
     </div>
   );
