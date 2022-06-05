@@ -44,7 +44,7 @@ const Presentation = () => {
             className="text-4xl md:text-4xl font-bold 
             bg-gradient-to-r bg-clip-text  text-transparent 
             from-amber-600 via-amber-400 to-amber-100
-            animate-text bp4sub:text-xl"
+            animate-text bp4:text-xl bp3sub:text-lg"
           >
             {t("job")}
           </h2>

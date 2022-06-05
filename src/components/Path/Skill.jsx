@@ -18,9 +18,10 @@ const Skill = () => {
   return (
     <div name="Parcours" className="w-full h-screen text-slate-50 bg-slate-900">
       {/* Container */}
+
       <div className="max-w-[1000px] lg2:max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full sm2:-mb-24">
         <Fade bottom>
-          <div className="mb-10 bp4sub:mt-96 sm2:mt-60">
+          <div className="mb-10 bp4sub:mt-96 sm2:mt-60 bp4sub:pt-80">
             <p className="text-4xl font-bold inline border-b-4  border-amber-500 bp4sub:text-2xl">
               {t("competences")}
             </p>
