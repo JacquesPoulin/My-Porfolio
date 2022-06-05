@@ -18,10 +18,9 @@ const Skill = () => {
   return (
     <div name="Parcours" className="w-full h-screen text-slate-50 bg-slate-900">
       {/* Container */}
-      <div className="max-w-[1000px] lg2:max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full">
-        <div className="md:hidden bp4sub:mb-10 bp4sub:mt-96"> </div>
+      <div className="max-w-[1000px] lg2:max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full sm2:-mb-24">
         <Fade bottom>
-          <div className="mb-10 bp4sub:mt-96">
+          <div className="mb-10 bp4sub:mt-96 sm2:mt-60">
             <p className="text-4xl font-bold inline border-b-4  border-amber-500 bp4sub:text-2xl">
               {t("competences")}
             </p>
@@ -39,7 +38,7 @@ const Skill = () => {
             ))}
           </div>
           <Link to="Portfolio" spy smooth isDynamic duration={1000}>
-            <div className="w-full flex justify-center mt-28">
+            <div className="w-full flex justify-center mt-20">
               <HiArrowNarrowDown className="w-10 h-10 cursor-pointer hover:text-amber-400 active:text-amber-600 bp2:hidden" />
             </div>
           </Link>
