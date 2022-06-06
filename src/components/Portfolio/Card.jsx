@@ -48,6 +48,7 @@ const Card = () => {
               stack5,
               stack6,
               demo,
+              status,
               code,
             }) => (
               <Tilt
@@ -75,7 +76,8 @@ const Card = () => {
                       <div className="absolute top-6 left-6 inline-block pt-1.5 pb-1.5 px-2 rounded-md text-lg text-gray-100 subpixel-antialiased font-medium bg-gradient-to-br from-green-500 to-blue-500 ">
                         <button type="button" onClick={handleOpen}>
                           {title}
-                        </button>
+                        </button>{" "}
+                        <p> {t(status)}</p>
                       </div>
                     </div>
                   </div>
@@ -135,7 +137,7 @@ const Card = () => {
                     {/* ----- CARD action buttons ----- */}
                     <div className="w-full flex justify-evenly">
                       <a
-                        href={demo}
+                        href={demo && demo}
                         target="_blank"
                         rel="noreferrer"
                         className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
@@ -143,7 +145,7 @@ const Card = () => {
                         <button type="button">DEMO</button>
                       </a>
                       <a
-                        href={code}
+                        href={code && code}
                         target="_blank"
                         rel="noreferrer"
                         className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
