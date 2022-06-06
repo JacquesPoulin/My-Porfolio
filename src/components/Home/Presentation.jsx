@@ -14,7 +14,7 @@ const Presentation = () => {
   return (
     <div name="Home" className="w-full h-screen">
       {/* ----- CONTAINER ----- */}
-      <div className="max-w-[1000px] lg2:max-w-[900px] mx-auto px-8 flex flex-col justify-center h-full text-slate-50 leading-10">
+      <div className="max-w-[900px] lg2:max-w-[900px] mx-auto -mt-5 px-8 flex flex-col justify-center h-full text-slate-50 leading-10">
         {/* ----- Name ----- */}
         <Animated
           animationIn="rotateIn"
