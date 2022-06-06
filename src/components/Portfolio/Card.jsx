@@ -3,6 +3,10 @@ import React, { useState } from "react";
 // ----- Package dependencies -----
 import Tilt from "react-tilt";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-scroll";
+
+// ----- React Icons -----
+import { HiArrowNarrowUp } from "react-icons/hi";
 
 // ----- Components -----
 import Form from "./Form";
@@ -158,6 +162,11 @@ const Card = () => {
               </Tilt>
             )
           )}
+      <div className="w-full flex justify-center mt-20 bp2:hidden">
+        <Link to="Home" spy smooth isDynamic duration={1000}>
+          <HiArrowNarrowUp className="w-10 h-10 cursor-pointer hover:text-amber-400 active:text-amber-600 bp2:hidden" />
+        </Link>
+      </div>
     </div>
   );
 };
