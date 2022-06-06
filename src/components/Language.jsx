@@ -36,12 +36,7 @@ const Language = () => {
           className="fixed w-6 h-6 mt-3"
         />
       </Button>
-      <Menu
-        id="basic-menu"
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
-      >
+      <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
         {languages.map(({ code, img, languageName, countryCode }) => (
           <MenuItem key={countryCode} onClick={handleClose}>
             <button

@@ -14,7 +14,7 @@ import { Link } from "react-scroll";
 // ----- Package components -----
 import { HideBetween } from "react-hide-on-scroll";
 
-// ----- Component -----
+// ----- Components -----
 import Language from "./Language";
 import Social from "./Social";
 
@@ -42,8 +42,8 @@ const NavBar = () => {
         <HideBetween
           height
           inverse
-          startHeight={0}
-          endHeight={1}
+          startHeight={-10}
+          endHeight={5}
           showOnPageInit
         >
           <div className="absolute flex justify-center mt-8 sm5:mt-16 sm5:ml-28 md:hidden z-50">
