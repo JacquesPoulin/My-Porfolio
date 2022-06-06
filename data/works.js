@@ -41,7 +41,7 @@ const works = [
     title: "LANDAREA",
     img: "/assets/images/landarea2.png",
     alt: "Image d'une femme qui montre sa plante",
-    desc: "Hackathon : application React (mobile first)",
+    desc: "Hackathon : application React (pour mobile)",
     txt: "",
     stack1: "/assets/images/svg/react-svgrepo-com.svg",
     stack2: "/assets/images/svg/tailwindcss-icon-svgrepo-com.svg",
