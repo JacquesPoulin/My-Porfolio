@@ -33,7 +33,7 @@ const Language = () => {
         <img
           src="/assets/images/svg/globe-svgrepo-com.svg"
           alt={t("icone")}
-          className="fixed w-6 h-6 mt-3"
+          className="w-5 h-5"
         />
       </Button>
       <Menu anchorEl={anchorEl} open={open} onClose={handleClose}>
