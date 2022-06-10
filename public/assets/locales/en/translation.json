@@ -7,22 +7,22 @@
   "icone": "globe icon",
 
   "job": "Full-Stack web developer",
-  "presentation_resume": "I am a young full-stack developer specialised in the creation of responsive and complete websites and applications. A ",
-  "mot1": "MAINTENABLE",
+  "presentation_resume": "I am a young full-stack developer specialised in the creation of responsive websites and applications. A code that is",
+  "mot1": "MAINTAINABLE",
   "mot2": "CLEAN",
-  "mot3": "READABLE",
+  "mot3": "LEGIBLE",
   "mot4": "EFFECTIVE",
   "mot5": "EFFICIENT",
-  "presentation_resume2": "code remains my priority.",
+  "presentation_resume2": "remains my priority.",
   "nav_bienvenue": "Welcome",
 
   "a_propos": "About me",
-  "bienvenue": "Hello and welcome to my portfolio !",
+  "bienvenue": "Hello and welcome to my portfolio!",
   "presentation_detail": "I am Jacques Poulin, Web developer, based in the Basque Country. I work mainly with",
   "et": "and",
-  "presentation_detail2": " I am passionate about designing websites and web applications. My goal is to improve my skills with a cleaner and more maintainable code. Do not hesitate to discover my",
+  "presentation_detail2": " I am passionate about designing websites and Web applications. My goal is to improve my skills with a cleaner and more maintainable code. Do not hesitate to discover my",
   "realisation": "WORKS.",
-  "presentation_detail3": "... Enjoy your visit !",
+  "presentation_detail3": "...Enjoy your visit!",
   "decouvrir": "discover",
 
   "competences": "Skills",
@@ -32,16 +32,16 @@
 
   "Site web statique et responsive": "Full responsive website",
   "Application dynamique avec appel et gestion d'une API": "Full React app & API call",
-  "Hackathon : application React (pour mobile)": "Hackathon : React mobile application",
+  "Hackathon : application React (pour mobile)": "Hackathon: React mobile application",
   "Site e-commerce Full-Stack": "Full-Stack e-shop",
   "status": "{in progress}",
 
   "remerciements": "Thank you for taking the time to review my portfolio!",
   "ravi": "I will be happy to collaborate if you appreciate my works.",
-  "invitation": "Do not hesitate to take look at the DEMOS and the CODE of my projects",
+  "invitation": "Do not hesitate to take a look at my projects",
 
   "nom": "name",
   "mail": "yourname@example.com",
-  "cv": "Resume",
+  "cv": "Résumé",
   "validez": "Send"
 }

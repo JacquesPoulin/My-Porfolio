@@ -10,7 +10,7 @@ import { RiDownload2Line } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 
 // ----- files -----
-import pdf from "../../public/assets/files/JacquesPoulin-cv-2022.pdf";
+import pdf from "../../public/assets/files/CV JACQUES POULIN.pdf";
 
 const Social = () => {
   // ----- destructuring to use the translation -----
