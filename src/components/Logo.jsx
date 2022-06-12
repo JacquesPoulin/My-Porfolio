@@ -21,5 +21,4 @@ Logo.propTypes = {
   myStyle: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
 };
-
 export default Logo;
