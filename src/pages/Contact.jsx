@@ -8,10 +8,7 @@ import ContactForm from "../components/Contact/ContactForm";
 
 const Contact = () => {
   return (
-    <div
-      name="Contact"
-      className="w-full h-full flex text-slate-50 bg-slate-900"
-    >
+    <div name="Contact" className="w-full h-full flex bg-slate-900">
       <div className="max-w-[700px] p-4 mx-auto flex flex-col md:flex w-full h-full bg-slate-900 bp1:mt-28 md:mt-28">
         <Fade bottom>
           <ContactForm />
