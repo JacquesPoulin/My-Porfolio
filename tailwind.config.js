@@ -11,6 +11,7 @@ module.exports = {
         bp3sub: { max: "481px" },
         bp4: { max: "400px" },
         bp4sub: { max: "374px" },
+        bp5: { max: "281px" },
         sm2: { min: "375px" },
         sm5: { min: "398px" },
         sm3: { min: "500px" },

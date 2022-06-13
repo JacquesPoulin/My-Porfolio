@@ -34,7 +34,8 @@
     "react-scroll": "^1.8.7",
     "react-select": "^5.3.2",
     "react-simple-typewriter": "^3.0.1",
-    "react-tilt": "^0.1.4"
+    "react-tilt": "^0.1.4",
+    "swiper": "^8.2.3"
   },
   "devDependencies": {
     "@types/classnames": "^2.3.1",
