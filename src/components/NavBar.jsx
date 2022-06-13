@@ -67,7 +67,7 @@ const NavBar = () => {
             key={id}
             className="text-amber-400 flex justify-end text-xl ml-6 font-secondary tracking-widest transition duration-500 ease-out hover:text-amber-600 focus:outline-none focus:border-amber-600 active:text-amber-50"
           >
-            <Link to={title} spy smooth isDynamic duration={1000}>
+            <Link to={title} spy smooth isDynamic offset={80} duration={1000}>
               {t(title && title)}
             </Link>
           </li>
