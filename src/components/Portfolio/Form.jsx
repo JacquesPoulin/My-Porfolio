@@ -41,7 +41,7 @@ const Form = ({ selected, setSelected }) => {
         className="font-bold 
             bg-gradient-to-r bg-clip-text  text-transparent 
             from-amber-600 via-amber-400 to-amber-100
-            animate-text"
+            animate-text z-10"
       >
         {t("tous_les_projets")}
       </button>

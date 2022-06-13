@@ -1,12 +1,18 @@
+/* eslint-disable import/no-unresolved */
 import React from "react";
 
 // ----- Package dependencies -----
-import { Link } from "react-scroll";
-import { HiArrowNarrowDown } from "react-icons/hi";
 import { useTranslation } from "react-i18next";
 
 // ----- Packages Components -----
 import Fade from "react-reveal/Fade";
+
+// SWIPER package dependencies & styles
+import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCube, Autoplay, EffectCards } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-cube";
+import "swiper/css/effect-cards";
 
 // ----- datas -----
 import skills from "../../../data/skills";
@@ -21,30 +27,94 @@ const Skill = () => {
 
       <div className="max-w-[1000px] lg2:max-w-[900px] mx-auto p-4 flex flex-col justify-center w-full h-full sm2:-mb-24">
         <Fade bottom>
-          <div className="mb-10 bp4sub:mt-96 sm2:mt-60 bp4sub:pt-80">
+          <div className="mb-10 bp4:pt-20 sm2:mt-60 bp4sub:mt-64 bp4sub:pt-44 bp5:mt-96 bp5:pt-96">
             <p className="text-4xl font-bold inline border-b-4  border-amber-500 bp4sub:text-2xl">
               {t("competences")}
             </p>
           </div>
-
-          {/* ----- list of skills ----- */}
-          <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-4 text-center py-8 ">
-            {skills?.map(({ id, img, alt }) => (
-              <div
-                className="shadow-md shadow-[#040c16] hover:scale-110 duration-300 rounded-lg"
-                key={id}
-              >
-                <img className="w-20 mx-auto py-5" src={img} alt={alt} />
-              </div>
-            ))}
+          <div>
+            <p className="text-justify mb-7 hover:text-amber-400">
+              {t("parcours")}
+            </p>
           </div>
-          <Link to="Portfolio" spy smooth isDynamic duration={1000}>
-            <div className="w-full flex justify-center mt-20">
-              <HiArrowNarrowDown className="w-10 h-10 cursor-pointer hover:text-amber-400 active:text-amber-600 bp2:hidden" />
+          {/* ----- LIST OF SKILLS ----- */}
+          <div className="w-full h-full">
+            {/* ----- 1st CARROUSEL ----- */}
+            <div className="w-full flex justify-center my-7">
+              <p
+                className="text-lg font-bold 
+            bg-gradient-to-r bg-clip-text  text-transparent 
+            from-amber-600 via-amber-400 to-amber-100
+            animate-text"
+              >
+                {t("techniques")}
+              </p>
             </div>
-          </Link>
-          <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full  bp4sub:mb-96">
-            {" "}
+            <Swiper
+              effect="cube"
+              autoplay={{
+                delay: 1000,
+                disableOnInteraction: false,
+              }}
+              grabCursor
+              cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+              }}
+              modules={[Autoplay, EffectCube]}
+              className="bp1:w-52 bp5:w-40"
+            >
+              {skills?.map(({ id, img, alt }) => (
+                <SwiperSlide key={id}>
+                  <div>
+                    <img
+                      className="w-72 mx-auto py-5 bg-slate-900"
+                      src={img}
+                      alt={alt}
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+
+            {/* ----- 2nd CARROUSEL ----- */}
+            <div className="w-full flex justify-center mt-16 mb-7">
+              <p
+                className="text-lg font-bold 
+            bg-gradient-to-r bg-clip-text  text-transparent 
+            from-amber-600 via-amber-400 to-amber-100
+            animate-text"
+              >
+                {t("personnelles")}
+              </p>
+            </div>
+            <Swiper
+              effect="cards"
+              grabCursor
+              modules={[EffectCards]}
+              className="w-1/3 h-60 bp2:w-2/3"
+            >
+              <SwiperSlide className="bg-gradient-to-bl from-purple-600 via-cyan-700 to-white rounded-md flex justify-center items-center font-bold text-3xl lg2:text-xl bp3:text-lg">
+                {t("Patience")}
+              </SwiperSlide>
+              <SwiperSlide className="bg-gradient-to-br from-rose-800 via-orange-700 to-slate-700 rounded-md flex justify-center items-center text-4xl lg2:text-xl bp3:text-lg">
+                {t("Curiosité")}
+              </SwiperSlide>
+              <SwiperSlide className="bg-gradient-to-b from-cyan-500 via-neutral-900 to-stone-800 rounded-md flex justify-center items-center text-4xl lg2:text-xl bp3:text-lg">
+                {t("Créativité")}
+              </SwiperSlide>
+              <SwiperSlide className="bg-gradient-to-tr from-orange-500 via-black to-blue-700 rounded-md flex justify-center items-center text-4xl lg2:text-xl bp3:text-lg">
+                {t("Empathie")}
+              </SwiperSlide>
+              <SwiperSlide className="bg-gradient-to-tr from-green-900 via-emerald-800 to-red-900 rounded-md flex justify-center items-center text-3xl lg2:text-xl bp3:text-lg">
+                {t("Communication")}
+              </SwiperSlide>
+              <SwiperSlide className="bg-gradient-to-r from-blue-900 via-violet-600 to-indigo-500 rounded-md flex justify-center items-center text-4xl lg2:text-xl bp3:text-lg">
+                {t("Esprit d'équipe")}
+              </SwiperSlide>
+            </Swiper>
           </div>
         </Fade>
       </div>

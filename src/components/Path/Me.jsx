@@ -3,7 +3,6 @@ import React, { useState } from "react";
 // ----- React Icons -----
 import { MdDeveloperMode } from "react-icons/md";
 import { GiLaptop } from "react-icons/gi";
-import { HiArrowNarrowDown } from "react-icons/hi";
 
 // ----- Package dependencies -----
 import { Link } from "react-scroll";
@@ -36,9 +35,9 @@ const Me = () => {
       className="w-full h-screen flex flex-col justify-center items-center text-slate-50 bg-slate-900"
     >
       <Fade bottom>
-        <div className="max-w-[1000px] lg2:max-w-[900px] w-full grid grid-cols-2 gap-8 bp4sub:mt-36 md2:-mt-20">
-          <div className="md:text-right bp4sub:text-lg bp4sub:mt-96 pb-8 pl-4 sm2:pt-72">
-            <p className="text-4xl font-bold inline border-b-4 border-amber-500 bp4sub:text-2xl sm2:text-3xl">
+        <div className="max-w-[1000px] lg2:max-w-[900px] w-full grid grid-cols-2 gap-8 bp3:mt-36 md2:-mt-20">
+          <div className="-mt-48 md:text-right bp4sub:text-lg bp4sub:mt-96 pb-8 pl-4 sm2:pt-72">
+            <p className="text-4xl font-bold inline border-b-4 border-amber-500 bp4sub:text-2xl sm2:text-3xl bp5:text-xl">
               {t("a_propos")}
             </p>
           </div>
@@ -121,12 +120,6 @@ const Me = () => {
             </div>
           </div>
         </div>
-
-        <Link to="Parcours" spy smooth isDynamic duration={1000}>
-          <div className="w-full flex justify-center mt-28">
-            <HiArrowNarrowDown className="w-10 h-10 cursor-pointer hover:text-amber-400 active:text-amber-600 bp2:hidden" />
-          </div>
-        </Link>
       </Fade>
     </div>
   );
