@@ -53,7 +53,7 @@ const works = [
   },
   {
     id: 4,
-    title: "AUTH",
+    title: "AUTH (only code available)",
     img: "/assets/images/firebase5.png",
     alt: "Image du logo firebase",
     desc: "App React : gestion d'authentification",
