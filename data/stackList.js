@@ -39,6 +39,10 @@ const stackList = [
     value: "MySQL",
     label: "MySQL",
   },
+  {
+    value: "Firebase",
+    label: "Firebase",
+  },
 ];
 
 export default stackList;
