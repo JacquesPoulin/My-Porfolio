@@ -45,7 +45,7 @@
   "App React : gestion d'authentification": "App React : gestion d'authentification",
   "Site e-commerce Full-Stack": "Site e-commerce Full-Stack",
   "status": "{en cours}",
-  "code disponible uniquement": "code disponible uniquement",
+  "{code disponible}": "Auth {code disponible}",
 
   "remerciements": "Merci pour le temps accordé à l'étude de mon Portfolio !",
   "ravi": "Je serais ravi de vous rencontrer si vous désirez en savoir plus à mon sujet.",
