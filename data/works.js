@@ -53,7 +53,7 @@ const works = [
   },
   {
     id: 4,
-    title: "AUTH (code disponible uniquement)",
+    title: "AUTH",
     img: "/assets/images/firebase5.png",
     alt: "Image du logo firebase",
     desc: "App React : gestion d'authentification",
@@ -62,8 +62,7 @@ const works = [
     stack3: "/assets/images/svg/firebase-svgrepo-com.svg",
     techno: "HTML REACT Firebase Tous tous ALL",
     learn: "",
-    status: "",
-    demo: "",
+    status: "{code disponible}",
     code: "https://github.com/JacquesPoulin/firebase-auth",
     difficulty: "medium",
     backend: false,
