@@ -17,7 +17,7 @@ const Contact = () => {
           <ContactForm />
         </Fade>
         <div className="w-full flex justify-center mt-10">
-          <p className="text-xs"> made with</p>
+          <p className="text-xs"> made by Jacques Poulin with</p>
           <img
             src="/assets/images/svg/react-svgrepo-com.svg"
             alt="logo REACT"
