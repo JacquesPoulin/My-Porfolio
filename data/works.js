@@ -80,7 +80,7 @@ const works = [
     stack4: "/assets/images/svg/express-svgrepo-com.svg",
     stack5: "/assets/images/svg/typescript-icon-svgrepo-com.svg",
     stack6: "/assets/images/svg/mysql-logo-svgrepo-com.svg",
-    techno: "HTML REACT SASS Tailwind TypeScript NodeJS MySQL Tous tous ALL",
+    techno: "HTML REACT SASS TypeScript NodeJS MySQL Tous tous ALL",
     learn: "",
     status: "status",
     difficulty: "hard",
