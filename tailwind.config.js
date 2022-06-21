@@ -6,6 +6,7 @@ module.exports = {
       screens: {
         lg2: { max: "1024px" },
         bp1: { max: "800px" },
+        bp1sub: { max: "700px" },
         bp2: { max: "600px" },
         bp3: { max: "500px" },
         bp3sub: { max: "481px" },
