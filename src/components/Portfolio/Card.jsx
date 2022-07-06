@@ -30,8 +30,8 @@ const Card = () => {
   return (
     <div className="max-w-[1000px] mb-4 p-0 md:flex md:flex-wrap md:w-full">
       <Form
-        selected={selected}
-        setSelected={setSelected}
+        selected={t({ selected })}
+        setSelected={t({ setSelected })}
         className="bp1:z-50"
       />
       {/* ----- CARD CONTAINER ----- */}
