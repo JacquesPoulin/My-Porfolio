@@ -10,8 +10,11 @@ import Box from "@mui/material/Box";
 import { Animated } from "react-animated-css";
 import { useTranslation } from "react-i18next";
 
+// ----- Datas -----
+
+
 const Modale = ({ open, handleClose }) => {
-  // ----- destructuring to use the translation -----
+  // ----- destructuring to use the translation package i18 -----
   const { t } = useTranslation();
 
   // ----- Function : modal styling -----
