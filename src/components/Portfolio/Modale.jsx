@@ -11,7 +11,7 @@ import { Animated } from "react-animated-css";
 import { useTranslation } from "react-i18next";
 
 // ----- Datas -----
-
+// import works from "../../../data/works.js";
 
 const Modale = ({ open, handleClose }) => {
   // ----- destructuring to use the translation package i18 -----
