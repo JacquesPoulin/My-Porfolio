@@ -23,7 +23,7 @@ const works = [
     title: "PORTFOLIO",
     img: "/assets/images/myPortfolio.png",
     alt: "",
-    desc: "Portfolio présentant mes projets",
+    desc: "Portfolio de mes projets",
     stack1: "/assets/images/svg/react-svgrepo-com.svg",
     stack2: "/assets/images/svg/tailwindcss-icon-svgrepo-com.svg",
     techno: "REACT SASS Tous tous ALL",
