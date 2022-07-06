@@ -77,7 +77,7 @@ const Card = () => {
 
                     {/* ----- CARD title ----- */}
                     <div className="w-full flex justify-between">
-                      <div className="absolute top-6 left-6 inline-block pt-1.5 pb-1.5 px-2 rounded-md text-lg text-gray-100 subpixel-antialiased font-medium bg-gradient-to-br from-green-500 to-blue-500 hover:text-amber-500 hover:bg-white">
+                      <div className="absolute top-6 left-6 inline-block pt-1.5 pb-1.5 px-2 rounded-md text-lg text-gray-100 subpixel-antialiased font-medium bg-gradient-to-br from-green-500 to-blue-500 hover:bg-white">
                         <button type="button" onClick={handleOpen}>
                           {title}
                         </button>{" "}
