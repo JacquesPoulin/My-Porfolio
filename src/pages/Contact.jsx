@@ -28,7 +28,7 @@ const Contact = () => {
             alt="logo REACT"
             className="w-4 h-4 ml-2"
           />
-          <p className="text-xs ml-2"> and lots of 💖</p>
+          <p className="text-xs ml-2"> and lots of 💖💖</p>
         </div>
       </div>
     </div>
