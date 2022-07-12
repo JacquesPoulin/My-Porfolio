@@ -51,9 +51,11 @@ const Card = () => {
               stack4,
               stack5,
               stack6,
-              demo,
               status,
+              demo,
               code,
+              codeFront,
+              codeBack,
             }) => (
               <Tilt
                 options={{
@@ -63,10 +65,10 @@ const Card = () => {
                   speed: 300,
                   perspective: 2000,
                 }}
-                className="group w-full m-h-full md:w-2/4"
+                className="group w-full md:w-2/4"
                 key={id}
               >
-                <div className="w-full m-h-full border-2 border-white border-opacity-10 rounded-lg overflow-hidden shadow-lgc">
+                <div className="w-full h-full border-2 border-white border-opacity-10 rounded-lg overflow-hidden shadow-lgc">
                   <div className="relative w-full overflow-hidden">
                     {/* ----- CARD Image ----- */}
                     <img
@@ -140,22 +142,52 @@ const Card = () => {
 
                     {/* ----- CARD action buttons ----- */}
                     <div className="w-full flex justify-evenly">
-                      <a
-                        href={demo && demo}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
-                      >
-                        <button type="button">DEMO</button>
-                      </a>
-                      <a
-                        href={code && code}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
-                      >
-                        <button type="button">CODE</button>
-                      </a>
+                      {demo && (
+                        <a
+                          href={demo && demo}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
+                        >
+                          {demo && <button type="button">DEMO</button>}
+                        </a>
+                      )}
+                      {code && (
+                        <a
+                          href={code && code}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
+                        >
+                          {code && <button type="button">CODE</button>}
+                        </a>
+                      )}
+
+                      {codeFront && (
+                        <a
+                          href={codeFront && codeFront}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
+                        >
+                          {codeFront && (
+                            <button type="button">CODE (Front)</button>
+                          )}
+                        </a>
+                      )}
+
+                      {codeBack && (
+                        <a
+                          href={codeBack && codeBack}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
+                        >
+                          {codeBack && (
+                            <button type="button">CODE (Back)</button>
+                          )}
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
