@@ -66,7 +66,7 @@ const Skill = () => {
               modules={[Autoplay, EffectCube]}
               className="bp1:w-52 bp5:w-40"
             >
-              {skills?.map(({ id, img, alt }) => (
+              {skills?.map(({ id, img, label, alt }) => (
                 <SwiperSlide key={id}>
                   <div>
                     <img
@@ -74,6 +74,7 @@ const Skill = () => {
                       src={img}
                       alt={alt}
                     />
+                    <p className="text-center pt-4">{label}</p>
                   </div>
                 </SwiperSlide>
               ))}
