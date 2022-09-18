@@ -72,7 +72,7 @@ const skills = [
   },
   {
     id: 8,
-    img: "../public/assets/images/svg/django-icon-svgrepo-com.svg",
+    img: "/assets/images/svg/django-icon-svgrepo-com.svg",
     alt: "logo Django",
     label: "Django",
     use: "Front Back",
@@ -82,7 +82,7 @@ const skills = [
   },
   {
     id: 9,
-    img: "../public/assets/images/svg/sass-svgrepo-com.svg",
+    img: "/assets/images/svg/sass-svgrepo-com.svg",
     alt: "logo Sass",
     label: "Sass",
     use: "Front",
