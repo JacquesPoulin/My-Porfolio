@@ -43,6 +43,14 @@ const stackList = [
     value: "Firebase",
     label: "Firebase",
   },
+  {
+    value: "Python",
+    label: "Python",
+  },
+  {
+    value: "Django",
+    label: "Django",
+  },
 ];
 
 export default stackList;
