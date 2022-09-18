@@ -44,6 +44,7 @@ const Card = () => {
               img,
               alt,
               title,
+              finished,
               desc,
               stack1,
               stack2,
@@ -81,9 +82,10 @@ const Card = () => {
                     <div className="w-full flex justify-between">
                       <div className="absolute top-6 left-6 inline-block pt-1.5 pb-1.5 px-2 rounded-md text-lg text-gray-100 subpixel-antialiased font-medium bg-gradient-to-br from-green-500 to-blue-500 hover:bg-white">
                         <button type="button" onClick={handleOpen}>
-                          {title}
+                          {title && title}
                         </button>{" "}
-                        <p> {t(status)}</p>
+                        <p> {t(status && status)}</p>
+                        <p> {finished && finished}</p>
                       </div>
                     </div>
                   </div>
