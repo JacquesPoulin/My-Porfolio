@@ -196,6 +196,14 @@ const Card = () => {
               </Tilt>
             )
           )}
+
+      {!selected.includes(works.techno) && (
+        <p className="w-full flex justify-center mt-20 bp2:hidden">
+          👷🚧 Des projets utilisant : "{selected}" sont en cours ... et
+          bientôt disponibles !
+        </p>
+      )}
+
       <div className="w-full flex justify-center mt-20 bp2:hidden">
         <Link to="Home" spy smooth isDynamic duration={1000}>
           <HiArrowNarrowUp className="w-10 h-10 cursor-pointer hover:text-amber-400 active:text-amber-600 bp2:hidden" />
