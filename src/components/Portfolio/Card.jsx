@@ -22,7 +22,6 @@ const Card = () => {
   // ----- States -----
   const [selected, setSelected] = useState(t("tous"));
   const [open, setOpen] = useState(false);
-  const [workSelected, setWorkSelected] = useState(true);
 
   // ----- Functions : handle modal opening & closing -----
   const handleOpen = () => setOpen(true);
