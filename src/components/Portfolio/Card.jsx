@@ -16,14 +16,14 @@ import Modale from "./Modale";
 import works from "../../../data/works.js";
 
 const Card = () => {
-  // ----- destructuring to use the translation -----
+  // ----- The translation -----
   const { t } = useTranslation();
 
-  // ----- UseStates -----
+  // ----- States -----
   const [selected, setSelected] = useState(t("tous"));
   const [open, setOpen] = useState(false);
 
-  // ----- Function : handle modal opening & closing -----
+  // ----- Functions : handle modal opening & closing -----
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -35,7 +35,7 @@ const Card = () => {
         className="bp1:z-50"
       />
       {/* ----- CARD CONTAINER ----- */}
-      {works &&
+      {works.some((work) => work.techno.includes(selected)) ? (
         works
           .filter(({ techno }) => techno.includes(selected) || !selected)
           .map(
@@ -57,6 +57,7 @@ const Card = () => {
               code,
               codeFront,
               codeBack,
+              codeAdmin,
             }) => (
               <Tilt
                 options={{
@@ -190,20 +191,44 @@ const Card = () => {
                           )}
                         </a>
                       )}
+
+                      {codeAdmin && (
+                        <a
+                          href={codeAdmin && codeAdmin}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
+                        >
+                          {codeAdmin && (
+                            <button type="button">CODE (Admin)</button>
+                          )}
+                        </a>
+                      )}
                     </div>
                   </div>
                 </div>
               </Tilt>
             )
-          )}
-
-      {!selected.includes(works.techno) && (
-        <p className="w-full flex justify-center mt-20 bp2:hidden">
-          👷🚧 Des projets utilisant : "{selected}" sont en cours ... et
-          bientôt disponibles !
-        </p>
+          )
+      ) : (
+        <>
+          <p className="w-full flex justify-center mt-20 bp2:hidden">
+            👷🚧 Un projet utilisant : {selected} est en cours ... et bientôt
+            disponibles !
+          </p>
+          <p className="w-full flex justify-center mt-20 bp2:hidden">
+            Pour en savoir plus ➡️
+            <a
+              href="https://github.com/JacquesPoulin"
+              target="_blank"
+              rel="noreferrer"
+              className="pl-4"
+            >
+              ici
+            </a>
+          </p>
+        </>
       )}
-
       <div className="w-full flex justify-center mt-20 bp2:hidden">
         <Link to="Home" spy smooth isDynamic duration={1000}>
           <HiArrowNarrowUp className="w-10 h-10 cursor-pointer hover:text-amber-400 active:text-amber-600 bp2:hidden" />
