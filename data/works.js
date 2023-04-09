@@ -6,7 +6,7 @@ const works = [
     alt: "Image d'une paire de sneakers de marque nike air jordan",
     desc: "Site e-commerce Full-Stack",
     stack1: "/assets/images/svg/python-svgrepo-com.svg",
-    stack2: "/public/assets/images/svg/django-icon-svgrepo-com.svg",
+    stack2: "/assets/images/svg/django-icon-svgrepo-com.svg",
     stack3: "/assets/images/svg/tailwindcss-icon-svgrepo-com.svg",
     techno: "HTML Python Django Tous tous ALL all",
     modalTitle: "OZOUK",
