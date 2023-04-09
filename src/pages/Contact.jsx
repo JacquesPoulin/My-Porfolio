@@ -17,18 +17,19 @@ const Contact = () => {
           <ContactForm />
         </Fade>
         <div className="w-full flex justify-center mt-10">
-          <p className="text-xs"> made by Jacques Poulin with</p>
+          <p className="text-xs">
+            {" "}
+            <i> - made by Jacques Poulin with </i>{" "}
+          </p>
           <img
             src="/assets/images/svg/react-svgrepo-com.svg"
             alt="logo REACT"
             className="w-4 h-4 ml-2"
           />
-          <img
-            src="/assets/images/svg/tailwindcss-icon-svgrepo-com.svg"
-            alt="logo REACT"
-            className="w-4 h-4 ml-2"
-          />
-          <p className="text-xs ml-2"> and lots of 💖💖</p>
+          <p className="text-xs ml-2">
+            {" "}
+            <i> and lots of 💖 - </i>{" "}
+          </p>
         </div>
       </div>
     </div>

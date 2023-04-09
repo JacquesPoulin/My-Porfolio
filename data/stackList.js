@@ -4,12 +4,8 @@ const stackList = [
     label: "HTML",
   },
   {
-    value: "CSS",
-    label: "CSS",
-  },
-  {
-    value: "JS vanilla",
-    label: "JS vanilla",
+    value: "Javascript (vanille)",
+    label: "Javascript (vanille)",
   },
   {
     value: "SASS",
