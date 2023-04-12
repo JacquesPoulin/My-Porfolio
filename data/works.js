@@ -1,7 +1,7 @@
 const works = [
   {
     id: 1,
-    title: "OZOUK",
+    title: "OSOUK",
     img: "/assets/images/osouk2.jpeg",
     alt: "Image d'une paire de sneakers de marque nike air jordan",
     desc: "Site e-commerce Full-Stack",
