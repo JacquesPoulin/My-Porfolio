@@ -57,7 +57,6 @@ const works = [
     techno: "HTML REACT Tailwind TypeScript NodeJS MySQL Tous tous ALL all",
     modalTitle: "BRILLE",
     codingTime: "2 mois",
-    demo: "https://upside.vercel.app/",
     codeFront: "https://github.com/JacquesPoulin/Upside",
     codeBack: "https://github.com/JacquesPoulin/upside-back",
     difficulty: "Difficile",
