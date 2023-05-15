@@ -60,22 +60,19 @@ const Me = () => {
               <p>{t("presentation_detail")}</p>
               <span className="text-amber-400 hover:text-amber-500">
                 {" "}
-                ReactJS
+                React
               </span>
+              ,
+              <span className="text-amber-400 hover:text-amber-500"> Node</span>
               ,
               <span className="text-amber-400 hover:text-amber-500">
                 {" "}
-                Typescript
-              </span>
-              ,
-              <span className="text-amber-400 hover:text-amber-500">
-                {" "}
-                NodeJS{" "}
+                Python{" "}
               </span>
               {t("et")}
               <span className="text-amber-400 hover:text-amber-500">
                 {" "}
-                MySQL
+                Django
               </span>
               .{t("presentation_detail2")}{" "}
               <Link
