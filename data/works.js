@@ -16,7 +16,7 @@ const works = [
     difficulty: "Difficile",
     backend: "✅",
     state: "finished",
-    finished: "31/2023",
+    finished: "03/2023",
   },
   {
     id: 2,
