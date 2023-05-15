@@ -1,7 +1,7 @@
 const works = [
   {
     id: 1,
-    title: "OZOUK",
+    title: "OSOUK",
     img: "/assets/images/osouk2.jpeg",
     alt: "Image d'une paire de sneakers de marque nike air jordan",
     desc: "Site e-commerce Full-Stack",
@@ -16,7 +16,7 @@ const works = [
     difficulty: "Difficile",
     backend: "✅",
     state: "finished",
-    finished: "31/2023",
+    finished: "03/2023",
   },
   {
     id: 2,
@@ -57,7 +57,6 @@ const works = [
     techno: "HTML REACT Tailwind TypeScript NodeJS MySQL Tous tous ALL all",
     modalTitle: "BRILLE",
     codingTime: "2 mois",
-    demo: "https://upside.vercel.app/",
     codeFront: "https://github.com/JacquesPoulin/Upside",
     codeBack: "https://github.com/JacquesPoulin/upside-back",
     difficulty: "Difficile",
