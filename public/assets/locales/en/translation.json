@@ -39,7 +39,10 @@
   "projets": "Works",
   "tous_les_projets": "ALL WORKS",
   "tous": "ALL",
-
+  "oups": "A project using : ",
+  "oups2": "is in progress ... and soon available !",
+  "en savoir plus": "more information",
+  "ici" : "here",
   "Site web statique et responsive": "Full responsive website",
   "Application dynamique avec appel et gestion d'une API": "Full React app & API call",
   "Hackathon : application React (pour mobile)": "Hackathon: React mobile application",

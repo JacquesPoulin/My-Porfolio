@@ -2,8 +2,8 @@ import React, { useState } from "react";
 
 // ----- Package dependencies -----
 import Tilt from "react-tilt";
-import { useTranslation } from "react-i18next";
 import { Link } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 // ----- React Icons -----
 import { HiArrowNarrowUp } from "react-icons/hi";
@@ -213,18 +213,17 @@ const Card = () => {
       ) : (
         <>
           <p className="w-full flex justify-center mt-20 bp2:hidden">
-            👷🚧 Un projet utilisant : {selected} est en cours ... et bientôt
-            disponibles !
+            👷🚧 {t("oups")} {" "} {selected} {t("oups2")}
           </p>
           <p className="w-full flex justify-center mt-20 bp2:hidden">
-            Pour en savoir plus ➡️
+            {t("en savoir plus")} ➡️
             <a
               href="https://github.com/JacquesPoulin"
               target="_blank"
               rel="noreferrer"
-              className="pl-4"
+              className="pl-3"
             >
-              ici
+              {t("ici")}
             </a>
           </p>
         </>
