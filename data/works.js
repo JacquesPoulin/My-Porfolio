@@ -1,6 +1,26 @@
 const works = [
   {
     id: 1,
+    title: "PROMPTOPIA",
+    img: "/assets/images/ai_1.jpg",
+    alt: "Image d'un bras robotisé",
+    desc: "Site de partage de prompts d'IA",
+    stack1: "/assets/images/svg/nextjs-svgrepo-com.svg",
+    stack2: "/assets/images/svg/mongo-svgrepo-com.svg",
+    stack3: "/assets/images/svg/tailwindcss-icon-svgrepo-com.svg",
+    techno:
+      "HTML Next NEXT.js next Mongo mongo MongoDB Mongodb API Tous tous ALL all",
+    modalTitle: "PROMPTOPIA",
+    codingTime: "1 mois",
+    demo: "https://promptopia-mope9cd14-jacquespoulin.vercel.app/",
+    code: "https://github.com/JacquesPoulin/promptopia",
+    difficulty: "Difficile",
+    backend: "✅",
+    state: "finished",
+    finished: "08/2023",
+  },
+  {
+    id: 2,
     title: "OSOUK",
     img: "/assets/images/osouk2.jpeg",
     alt: "Image d'une paire de sneakers de marque nike air jordan",
@@ -19,7 +39,7 @@ const works = [
     finished: "03/2023",
   },
   {
-    id: 2,
+    id: 3,
     title: "BRILLE",
     img: "/assets/images/brille7.jpg",
     alt: "Image d'un sac à main",
@@ -43,7 +63,7 @@ const works = [
     finished: "09/2022",
   },
   {
-    id: 3,
+    id: 4,
     title: "UPSIDE",
     img: "/assets/images/hackathon.jpg",
     alt: "Hackathon wild code school",
@@ -65,7 +85,7 @@ const works = [
     finished: "07/2022",
   },
   {
-    id: 4,
+    id: 5,
     title: "PORTFOLIO",
     img: "/assets/images/myPortfolio.png",
     alt: "",
@@ -88,7 +108,7 @@ const works = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "STAR TOUR",
     img: "/assets/images/startour2.jpg",
     alt: "Image de vaisseau en train de voler",
@@ -115,7 +135,7 @@ const works = [
     finished: "03/2022",
   },
   {
-    id: 6,
+    id: 7,
     title: "LANDAREA",
     img: "/assets/images/landarea2.png",
     alt: "Image d'une femme qui montre sa plante",
@@ -140,7 +160,7 @@ const works = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "MOVIE FINDER",
     img: "/assets/images/moviefinder1.webp",
     alt: "",

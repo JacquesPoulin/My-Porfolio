@@ -107,7 +107,7 @@ const Card = () => {
                         <img
                           src={stack1}
                           alt=""
-                          className="w-10 h-10 my-4 bp2:w-8 bp2:h-8"
+                          className="w-12 h-12 my-4 bp2:w-8 bp2:h-8"
                         />
                       )}
                       {stack2 && (
@@ -138,7 +138,7 @@ const Card = () => {
                         <img
                           src={stack6}
                           alt=""
-                          className="w-10 h-10 my-4 bp2:w-8 bp2:h-8"
+                          className="w-12 h-12 my-4 bp2:w-8 bp2:h-8"
                         />
                       )}
                     </div>
@@ -152,7 +152,11 @@ const Card = () => {
                           rel="noreferrer"
                           className="self-start p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
                         >
-                          {demo && <button type="button">DEMO</button>}
+                          {demo && (
+                            <button type="button" title="Voir le site">
+                              DEMO
+                            </button>
+                          )}
                         </a>
                       )}
                       {code && (
@@ -162,7 +166,11 @@ const Card = () => {
                           rel="noreferrer"
                           className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
                         >
-                          {code && <button type="button">CODE</button>}
+                          {code && (
+                            <button type="button" title="Voir le code">
+                              CODE
+                            </button>
+                          )}
                         </a>
                       )}
 
@@ -174,7 +182,9 @@ const Card = () => {
                           className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
                         >
                           {codeFront && (
-                            <button type="button">CODE (Front)</button>
+                            <button type="button" title="Voir le code front">
+                              CODE (Front)
+                            </button>
                           )}
                         </a>
                       )}
@@ -187,7 +197,9 @@ const Card = () => {
                           className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
                         >
                           {codeBack && (
-                            <button type="button">CODE (Back)</button>
+                            <button type="button" title="Voir le code back">
+                              CODE (Back)
+                            </button>
                           )}
                         </a>
                       )}
@@ -200,7 +212,9 @@ const Card = () => {
                           className="self-center p-2 bg-gradient-to-r bg-clip-text text-transparent from-green-500 via-blue-300 to-blue-500 font-medium no-underline transform hover:scale-105 animate-text bp2:text-sm"
                         >
                           {codeAdmin && (
-                            <button type="button">CODE (Admin)</button>
+                            <button type="button" title="Voir le code admin">
+                              CODE (Admin)
+                            </button>
                           )}
                         </a>
                       )}
@@ -213,7 +227,7 @@ const Card = () => {
       ) : (
         <>
           <p className="w-full flex justify-center mt-20 bp2:hidden">
-            👷🚧 {t("oups")} {" "} {selected} {t("oups2")}
+            👷🚧 {t("oups")} {selected} {t("oups2")}
           </p>
           <p className="w-full flex justify-center mt-20 bp2:hidden">
             {t("en savoir plus")} ➡️

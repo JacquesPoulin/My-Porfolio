@@ -20,6 +20,14 @@ const stackList = [
     label: "REACT",
   },
   {
+    value: "NEXT.js",
+    label: "NEXT.js",
+  },
+  {
+    value: "Mongo",
+    label: "Mongo",
+  },
+  {
     value: "API",
     label: "API",
   },
